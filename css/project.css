@@ -142,12 +142,14 @@
  .menuOpen {
      position: fixed;
      top: 1em;
+     color:white;
      background:rgba(50,50,50,0.5);
      padding:0.5em;
  }
  
- .menuOpen, .menuOpen:visited, {
+ .menuOpen, .menuOpen:visited, .menuOpen:active {
      color: white;
+     text-decoration:none;
  }
  
  .menuOpen:hover {
