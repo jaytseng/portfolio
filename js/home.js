@@ -58,6 +58,9 @@ $(document).ready(function () {
         }
     });
 
+    //MANUALLY TRIGGERING SCROLL EVENT
+    $(window).trigger('scroll');
+
     //SCROLLSPY
     $("body").scrollspy({
         target: "#myNavbar",
