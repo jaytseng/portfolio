@@ -1,0 +1,234 @@
+body {
+    min-width: 320px;
+}
+
+.bg-img {
+    background: url('image/Action_FallingBrushRender.jpg') no-repeat 0% center;
+    position: fixed;
+    width: 100vw;
+    height: auto;
+    /*same height as jumbotron */
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+
+.jumbotron h1 {
+    font-size: 6em;
+    padding-top: 35vh;
+    color: white;
+    text-align: left;
+    padding-left:2em;
+    padding-right:2em;
+    margin: 0;
+}
+
+.jumbotron h3 {
+    font-size: 2em;
+    font-weight: 200;
+    color: white;
+    margin-top: 1.25em;
+    text-align: left;
+    padding-left:6em;
+    padding-right:6em;
+}
+
+.jumbotron p {
+    /*padding-left: 5vw;
+    padding-right: 5vw;*/
+    padding-top: 1.5vh;
+    text-align: center;
+    color: gray;
+}
+
+.sectionDivider {
+    background-color: white;
+    min-height: 65vh;
+    height: auto;
+    padding-left: 13em;
+    padding-right: 15em;
+}
+
+.sectionDivider h1 {
+    font-size: 8em;
+    padding-top: 5vh;
+
+}
+
+.sectionDivider p {
+    font-size: 1.5em;
+    font-weight: 100;
+    padding-left: 5vw;
+    padding-top: 3vw;
+    padding-bottom: 3vw;
+}
+
+
+
+
+.grow {
+    -webkit-transition: transform 0.4s ease;
+    -moz-transition: transform 0.4s ease;
+    transition: transform 0.4s ease;
+}
+
+.grow:hover {
+    transform: scale(1.2);
+}
+
+
+
+.date {
+    font-style: italic;
+}
+
+@media (max-width:1200px) {
+    .jumbotron h1 {
+        font-size: 4.5em;
+        padding-top:28vh;
+        padding-left: 2vh;
+    }
+    .jumbotron h3 {
+        padding-left: 2vh;
+    }
+}
+
+@media (max-width:700px) {
+    .jumbotron h1 {
+        font-size: 3.5em;
+        padding-top:22vh;
+        padding-left: 2vh;
+    }
+    .jumbotron h3 {
+        font-size: 1.25em;
+        padding-left: 2vh;
+    }
+    .sectionDivider h1 {
+        font-size: 5em;
+        padding-top: 5vh;
+    }
+    .sectionDivider {
+        padding: 1em;
+    }
+}
+
+
+
+.static-nav {
+    position: absolute;
+}
+
+.active-nav {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.nav >li > a{
+    text-decoration:none;
+}
+
+.resume-button h3 {
+    padding-left: 5vw;
+    margin: 0;
+}
+
+.resume-shell {
+    display: none;
+    padding-left: 5vw;
+    margin: 0;
+}
+
+.resume {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: auto;
+    flex-wrap: wrap;
+    padding-bottom: 3em;
+}
+
+.resume-section {
+    flex-grow: 1;
+    width: auto;
+}
+
+.resume ul {
+    padding-left: 3em;
+}
+
+.resume ul li {
+    list-style-type: none;
+    padding-bottom: 1em;
+}
+
+.resume ul li p {
+    padding: 0;
+    margin: 0;
+    font-size: 1.1em;
+}
+
+.portfolioContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    height: auto;
+    flex-wrap: wrap;
+    padding-bottom: 3vh;
+    padding-top: 5vh;
+    padding-left: 5vw;
+}
+
+.portfolioItem {
+    min-width: 150px;
+    max-width: 400px;
+    flex-grow: 1;
+    flex-basis: auto;
+    padding-bottom: 1em;
+}
+
+.portfolioItem img {
+    min-width: 140px;
+    width: 95%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    height: auto;
+    z-index: -10000;
+}
+
+.portfolioItem a {
+    text-decoration: none;
+    position: relative;
+}
+
+.portfolioItem h4 {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    padding-top: 0.25em;
+    text-align: center;
+    color: black;
+}
+
+.portfolioItem p {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 1em;
+    font-style: italic;
+    color: black;
+}
+
+.fade {
+    opacity: 1;
+    transition: opacity .5s ease-in-out;
+    -moz-transition: opacity .5s ease-in-out;
+    -webkit-transition: opacity .5s ease-in-out;
+}
+
+.fade:hover {
+    opacity: 0.2;
+}
