@@ -1,5 +1,7 @@
 footer {
     background-color: black;
+    padding-right: 15px;
+    padding-left: 15px;
 }
 #contact h1 {
     font-size: 8em;
