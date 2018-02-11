@@ -339,20 +339,14 @@
             <div class="footer-flexCont">
                 <h3>message me</h3>
                 <p>straight to my mailbox!</p>
-                <form>
-                    <div class="form_text ">
-                        <label for="form_full_name">name</label>
-                        <input type="text" id="form_full_name" placeholder="tell me your name ">
-                    </div>
-                    <div class="form_text ">
-                        <label for="form_email">email</label>
-                        <input type="email" id="form_email" placeholder="how can i contact you? ">
-                    </div>
-                    <div class="form_comment ">
-                        <label for="form_comment">messenge</label>
-                        <textarea id="form_comment" name="form_comment" placeholder="lets chat!"></textarea>
-                    </div>
-                    <button type="submit">submit</button>
+                <form action="mailto:jaytseng0303@hotmail.com" method="post" enctype="text/plain">
+                    <label for="form_full_name">name</label>
+                    <input type="text" name="name" id="form_full_name" placeholder="tell me your name ">
+                    <label for="form_email">email</label>
+                    <input type="email" name="email" id="form_email" placeholder="how can i contact you? ">
+                    <label for="form_comment">messenge</label>
+                    <textarea id="form_comment" name="form_comment" placeholder="lets chat!"></textarea>
+                    <input type="submit" id="submit"></button>
                 </form>
             </div>
             <div class="footer-flexCont ">

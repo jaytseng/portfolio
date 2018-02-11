@@ -67,6 +67,10 @@ footer {
     color: white;
 }
 
+.footer-flexCont input#submit{
+    color:white;
+}
+
 .footer-flexCont input {
     font-size: 1em;
     font-weight: 100;
