@@ -54,7 +54,10 @@
                                 <a class="nav-experience" href="#experience">vision</a>
                             </li>
                             <li>
-                                <a class="nav-execution" href="#execution">execution</a>
+                                <a class="nav-execution" href="#execution">key decisions</a>
+                            </li>
+                            <li>
+                                <a class="nav-result" href="#result">result</a>
                             </li>
                             <li>
                                 <a class="nav-contact" href="#contact">contact</a>
@@ -114,7 +117,7 @@
                                 </figure>
                             </div>
                             <div class=" sectionDivider " id="execution">
-                                <h1 style="color:gray; ">challenges</h1>
+                                <h1 style="color:gray; ">key decisions</h1>
                                 <p>We faced two major challenges in the creation of this project, the first was the simulation and rendering of water, the second was the time it took to render our project. We researched different solutions to simulate water,
                                     the first was Realflow, the more realistic of the two solutions, and the other using nCollider objects. Unforunatley, Realflow required too much simulation time, an estimated 6 to 8 hours to simulate each of our two
                                     shots. We ended up using the built in nCollider simulation to a fairly decent result.
@@ -135,7 +138,9 @@
                                 <p>We solved the issue by using offshore rendering services, RebusFarm and Fox Renderfarm. They were capable of rendering over 100 frames simultaneously and do each frame in half the amount of time. Thus, we were able to fully
                                     finish rendering over the 7 days, giving us time to tweak and re-render any failed shots.</p>
                             </div>
-
+                            <div class=" sectionDivider " id="result">
+                                <p>test</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -219,6 +224,11 @@
             $(".nav-contact ").click(function(e) {
                 e.preventDefault();
                 $(window).scrollTo('#contact', 600);
+            })
+
+            $(".nav-result").click(function (e) {
+            e.preventDefault();
+            $(window).scrollTo('#result', 600);
             })
 
 
