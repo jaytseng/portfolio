@@ -1,6 +1,6 @@
  /*body {
      overflow-x: hidden;
-     font-family: 'raleway', 'roboto', 'arial', 'helvetica'sans-serif;
+     font-family: 'raleway', 'roboto', 'arial', 'helvetica', 'sans-serif;
  }
  /* Toggle Styles */
  
@@ -256,7 +256,7 @@
  
  .sectionDivider {
      padding-top: 0.5em;
-     padding-bottom: 1.5em;
+     padding-bottom: 0.5em;
  }
  
  .sectionDivider h1 {
@@ -266,12 +266,23 @@
      padding-left: 15px;
      padding-right: 15px;
  }
+ .sectionDivider h2 {
+    font-size: 3em;
+    padding-top: 2vh;
+    padding-bottom:6vh;
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width:95%;
+    margin-top:0;
+    margin-bottom:0;
+}
  
  .sectionDivider p {
      font-size: 1.5em;
      font-weight: 100;
      padding-left: 5vw;
-     padding-bottom: 2vw;
+     padding-bottom: 1vw;
+     max-width:95%;
  }
 
  .sectionDivider figure{
