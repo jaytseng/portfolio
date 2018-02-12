@@ -319,6 +319,17 @@
      font-style: italic;
  }
 
+ .row img{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+ }
+
+ .row figcaption{
+     text-align:center;
+ }
+
  .row iframe.video {
     position: relative;
     top: 0;

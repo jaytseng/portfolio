@@ -29,12 +29,6 @@ $(document).ready(function () {
         $(window).scrollTo('.contact', 600);
     })
 
-    $(".nav-result").click(function (e) {
-        e.preventDefault();
-        $(window).scrollTo('.result', 600);
-        console.log("navbar-result selected");
-    })
-
     $("#scrollDown").click(function (e) {
         e.preventDefault();
         $(window).scrollTo('.design', 600);
