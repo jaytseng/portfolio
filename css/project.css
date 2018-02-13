@@ -276,6 +276,14 @@
     margin-top:0;
     margin-bottom:0;
 }
+
+.sectionDivider h3 {
+    font-size: 2em;
+    padding-top: 0.25vh;
+    padding-bottom:0.25vh;
+    padding-left: 15px;
+    padding-right: 15px;
+}
  
  .sectionDivider p {
      font-size: 1.5em;
