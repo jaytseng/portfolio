@@ -3,9 +3,10 @@ body {
 }
 
 .bg-img {
-    background: url('image/Action_FallingBrushRender.jpg') no-repeat 0% center;
+    background: url('image/TRIP IMGS-7.jpg');
+    background-position: center;
     position: fixed;
-    width: 100vw;
+    width: 100%;
     height: auto;
     /*same height as jumbotron */
     top: 0;
@@ -19,8 +20,8 @@ body {
     padding-top: 25vh;
     color: white;
     text-align: left;
-    padding-left:2em;
-    padding-right:2em;
+    padding-left:7vw;
+    padding-right:4vh;
     margin: 0;
 }
 
@@ -30,8 +31,8 @@ body {
     color: white;
     margin-top: 1.25em;
     text-align: left;
-    padding-left:6em;
-    padding-right:6em;
+    padding-left:7vw;
+    padding-right:4vh;
 }
 
 .jumbotron p {
@@ -83,10 +84,15 @@ body {
     font-style: italic;
 }
 
+@media (max-width:1500px) {
+    .jumbotron h1 {
+        padding-top:15vh;
+    }
+}
 @media (max-width:1200px) {
     .jumbotron h1 {
         font-size: 4.5em;
-        padding-top:28vh;
+        padding-top:20vh;
         padding-left: 2vh;
     }
     .jumbotron h3 {
@@ -96,6 +102,8 @@ body {
     .sectionDivider p{
         max-width: 100%;
     }
+
+
 }
 
 @media (max-width:700px) {
@@ -188,7 +196,7 @@ body {
 .portfolioItem {
     min-width: 150px;
     max-width: 400px;
-    flex: flex-grow;
+    flex: 1;
     flex-basis: auto;
     padding-bottom: 1em;
 }
@@ -224,6 +232,12 @@ body {
     font-size: 1em;
     font-style: italic;
     color: black;
+}
+
+@media (max-width:1272px){
+    .portfolioItem {
+        max-width: 80%;
+    }
 }
 
 .fade {
