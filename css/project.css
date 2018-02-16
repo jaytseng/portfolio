@@ -57,7 +57,7 @@
      list-style: none;
  }
  
- .sidebar-nav > .sidebar-brand {
+ .sidebar-nav>.sidebar-brand {
      height: 65px;
      font-size: 18px;
      line-height: 60px;
@@ -85,14 +85,12 @@
          margin-right: 0;
      }
  }
-
- @media(max-width:768px){
-     .sidebar-nav{
-         width:100%;
+ 
+ @media(max-width:768px) {
+     .sidebar-nav {
+         width: 100%;
      }
  }
-
- 
  
  .menu-content {
      padding-left: 2.5%;
@@ -112,7 +110,7 @@
      transition: text-decoration 0.1s ease-in-out;
  }
  
- .menu-content a:hover {   
+ .menu-content a:hover {
      color: white;
  }
  
@@ -129,7 +127,7 @@
  }
  
  .menu-content p {
-     color: gray ;
+     color: gray;
      font-weight: 100;
      margin-bottom: 0.25em;
  }
@@ -142,22 +140,24 @@
  .menuOpen {
      position: fixed;
      top: 1em;
-     color:white;
-     background:rgba(50,50,50,0.5);
-     padding:0.5em;
+     color: white;
+     background: rgba(50, 50, 50, 0.5);
+     padding: 0.5em;
+     z-index: 100;
  }
  
- .menuOpen, .menuOpen:visited, .menuOpen:active {
+ .menuOpen,
+ .menuOpen:visited,
+ .menuOpen:active {
      color: white;
-     text-decoration:none;
+     text-decoration: none;
  }
  
  .menuOpen:hover {
      color: rgb(78, 78, 78);
-     background:rgba(200,200,200,0.75);
+     background: rgba(200, 200, 200, 0.75);
      text-decoration: none;
  }
- 
  /*//TOGGLE BUTTON*/
  /** {
   margin: 0;
@@ -208,7 +208,8 @@
      transition: color 0.25s ease-in-out;
  }
  
- #nav-icon3 span:nth-child(2), #nav-icon3 span:nth-child(3) {
+ #nav-icon3 span:nth-child(2),
+ #nav-icon3 span:nth-child(3) {
      top: 18px;
      -webkit-transition: color 0.25s ease-in-out;
      -moz-transition: color 0.25s ease-in-out;
@@ -262,55 +263,57 @@
  .sectionDivider h1 {
      font-size: 6em;
      padding-top: 2vh;
-     padding-bottom:2vh;
+     padding-bottom: 2vh;
      padding-left: 15px;
      padding-right: 15px;
  }
+ 
  .sectionDivider h2 {
-    font-size: 3em;
-    padding-top: 2vh;
-    padding-bottom:6vh;
-    padding-left: 15px;
-    padding-right: 15px;
-    max-width:95%;
-    margin-top:0;
-    margin-bottom:0;
-}
-
-.sectionDivider h3 {
-    font-size: 2em;
-    padding-top: 0.25vh;
-    padding-bottom:0.25vh;
-    padding-left: 15px;
-    padding-right: 15px;
-}
+     font-size: 3em;
+     padding-top: 2vh;
+     padding-bottom: 6vh;
+     padding-left: 15px;
+     padding-right: 15px;
+     max-width: 95%;
+     margin-top: 0;
+     margin-bottom: 0;
+ }
+ 
+ .sectionDivider h3 {
+     font-size: 2em;
+     padding-top: 0.25vh;
+     padding-bottom: 0.25vh;
+     padding-left: 15px;
+     padding-right: 15px;
+ }
  
  .sectionDivider p {
      font-size: 1.5em;
      font-weight: 100;
      padding-left: 5vw;
      padding-bottom: 1vw;
-     max-width:95%;
+     max-width: 95%;
  }
-
- .sectionDivider figure{
+ 
+ .sectionDivider figure {
      padding-left: 5vw;
  }
-
- .sectionDivider figure figcaption{
-     padding-bottom:1.5em;
-     font-size:1.1em;
+ 
+ .sectionDivider figure figcaption {
+     padding-bottom: 1.5em;
+     font-size: 1.1em;
      text-align: center;
  }
- .sectionDivider img{
-     width:100%;
-     height:auto;
+ 
+ .sectionDivider img {
+     width: 100%;
+     height: auto;
  }
-
- .sectionDivider iframe{
-     width:100%;
-     height:35vh;
-     border:none;
+ 
+ .sectionDivider iframe {
+     width: 100%;
+     height: 35vh;
+     border: none;
  }
  
  .grow {
@@ -326,27 +329,27 @@
  .date {
      font-style: italic;
  }
-
- .row img{
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
+ 
+ .row img {
+     position: relative;
+     top: 0;
+     left: 0;
+     width: 100%;
  }
-
- .row figcaption{
-     text-align:center;
+ 
+ .row figcaption {
+     text-align: center;
  }
-
+ 
  .row iframe.video {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 42vw;
-    border: 0;
+     position: relative;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 42vw;
+     border: 0;
  }
-
+ 
  @media (max-width:1000px) {
      .sectionDivider h1 {
          font-size: 5em;
