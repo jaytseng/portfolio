@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <title>
+        Freedom Boat Club Spring 2017 Promo
+    </title>
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='css/bootstrap.css' rel='stylesheet'>
+    <link href='css/project.css' rel='stylesheet'>
+    <link href="css/footer.css" rel='stylesheet'>
+
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600" rel="stylesheet">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114047092-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-114047092-1');
+    </script>
+</head>
+
+<body data-spy="scroll" data-target="#myNavBar">
+
+    <main class="row container-fluid">
+
+        <div id="wrapper">
+
+            <!-- Sidebar -->
+            <div id="sidebar-wrapper">
+                <div class="menu-content sidebar-nav">
+                    <!--<div id="nav-icon3">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>-->
+                    <a href="index.html"><span class="glyphicon glyphicon-menu-left"></span>GO HOME</a>
+                    <a href="#" class="menuClose" id="menuClose">MENU <span class="glyphicon glyphicon-menu-hamburger"></span></a>
+                    <h1>Freedom Boat Club Spr. 2017 Promo</h1>
+                    <h2>Promotional, Interview</h2>
+                    <p>&nbsp;</p>
+                    <h2><strong>Client</strong> Freedom Boat Club, BC</h2>
+                    <p>&nbsp;</p>
+                    <h2><strong>Team</strong> Dolapo Toki, Johnson Lu</h2>
+                    <h2><strong>Role</strong> Cinematographer, Editor, Animator</h2>
+                    <h2><strong>Tools</strong> Canon 5D Mark 3, Glidecam, Adobe Premiere, After Effects, Audition</h2>
+                    <h2><strong>Timeframe</strong> 2 months</h2>
+                </div>
+
+            </div>
+            <div id="page-content-wrapper" style="padding:0;">
+                <div class="container-fluid">
+                    <div class="row">
+                        <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/sLqD52er1-A?rel=0&amp;fs=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <div class="col-lg-12">
+                            <a href="#" class="menuOpen"><span class="glyphicon glyphicon-menu-hamburger"></span> MENU</a>
+                            <div class=" sectionDivider " id="concept">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <footer class="row container-fluid contact" id="contact">
+                    <h1>contact</h1>
+                    <div class="footer-flexbox">
+                        <div class="footer-flexCont">
+                            <h3>find me here</h3>
+                            <p><strong>Email</strong><br> <a href="mailto:hello@jaytseng.com ">hello@jaytseng.com</a></p>
+                            <p><strong>Phone</strong><br> <a href="tel:6047640568 ">604 764 0568</a></p>
+                            <p><strong>Address</strong><br>Simon Fraser University<br>13450 – 102nd Avenue<br>Surrey, BC V3T 0A3</p>
+                            <iframe style="border:0 " src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJVWLXWNPZhVQRbGogBYEKzCc&key=AIzaSyA291LR7BV_j2hY96MFRy5XI0cWs-yUmYY " allowfullscreen></iframe>
+                        </div>
+                        <div class="footer-flexCont">
+                            <h3>message me</h3>
+                            <p>straight to my mailbox!</p>
+                            <form action="mailto:jaytseng0303@hotmail.com" method="post" enctype="text/plain">
+                                <label for="form_full_name">name</label>
+                                <input type="text" name="name" id="form_full_name" placeholder="tell me your name ">
+                                <label for="form_email">email</label>
+                                <input type="email" name="email" id="form_email" placeholder="how can i contact you? ">
+                                <label for="form_comment">messenge</label>
+                                <textarea id="form_comment" name="form_comment" placeholder="lets chat!"></textarea>
+                                <input type="submit" id="submit"></button>
+                            </form>
+                        </div>
+                        <div class="footer-flexCont ">
+                            <h3>let's be social</h3>
+                            <p>follow me on</p>
+                            <a href="https://linkedin.com ">linkedin </a>
+                            <a href="https://youtube.com "> youtube </a>
+                            <a href="httpe://facebook.com "> facebook</a>
+                            <h3>other informations</h3>
+                            <p>copyright Jay Tseng 2016</p>
+                            <a href="styleGuide.html ">style guide &amp; citations</a>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+
+    </main>
+
+
+
+    <script src="js/modernizr.js "></script>
+    <script src="js/jquery.js "></script>
+    <script src="js/jquery.scrollTo.js "></script>
+    <script src="js/bootstrap.js "></script>
+
+    <script>
+        $(document).ready(function() {
+            $('.menuClose').click(function() {
+                event.preventDefault();
+                $(this).toggleClass('open');
+                $("#wrapper ").toggleClass("toggled ");
+            });
+            $('.menuOpen').click(function() {
+                event.preventDefault();
+                $(this).toggleClass('open');
+                $("#wrapper ").toggleClass("toggled ");
+            });
+
+            // $(".nav-concept ").click(function(e) {
+            //     e.preventDefault();
+            //     $(window).scrollTo('#concept', 600);
+            //     console.log("navbar-design selected ");
+            // })
+
+            // $(".nav-experience ").click(function(e) {
+            //     e.preventDefault();
+            //     $(window).scrollTo('#experience', 600);
+            //     console.log("navbar-media selected ");
+            // })
+
+            // $(".nav-execution ").click(function(e) {
+            //     e.preventDefault();
+            //     $(window).scrollTo('#execution', 600);
+            // })
+
+            // $(".nav-contact ").click(function(e) {
+            //     e.preventDefault();
+            //     $(window).scrollTo('#contact', 600);
+            // })
+
+            // $(".nav-result").click(function (e) {
+            // e.preventDefault();
+            // $(window).scrollTo('#result', 600);
+            // })
+
+
+            $(window).on('load resize', function() {
+                var winWidth = $(window).width();
+                console.log("winWidth " + winWidth);
+                if (winWidth <= 768) {
+                    document.getElementById("menuClose").setAttribute("style", "display:inline; ");
+                } else {
+                    document.getElementById("menuClose").setAttribute("style", "display:none; ");
+                }
+            });
+        });
+        // $(window).on('load resize', function(){
+        //      var winWidth = $(window).width();
+        //     console.log("winWidth " + winWidth);
+        //     if (winWidth <= 768) {
+        //         document.getElementById("nav-icon3 ").setAttribute("style ", "display:block; ");
+        //         $('#nav-icon3').click(function () {
+        //             $(this).toggleClass('open');
+        //             $("#wrapper ").toggleClass("toggled ");
+        //         });
+        //     } else {
+        //         document.getElementById("nav-icon3 ").setAttribute("style ", "display:none; ");
+        //     }
+        // })
+    </script>
+</body>
+
+</html>
+
+<!--
+       
+
+-->
