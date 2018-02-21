@@ -235,11 +235,21 @@ body {
 
 .fade {
     opacity: 1;
-    transition: opacity .5s ease-in-out;
-    -moz-transition: opacity .5s ease-in-out;
-    -webkit-transition: opacity .5s ease-in-out;
+    transition: opacity .2s ease-in-out;
+    -moz-transition: opacity .2s ease-in-out;
+    -webkit-transition: opacity .2s ease-in-out;
 }
 
 .fade:hover {
-    opacity: 0.2;
+    opacity: 0.6;
+}
+
+.not-active {
+    pointer-events: none;
+    cursor: default;
+  }
+
+.not-active img{
+    filter: grayscale(70%);
+    opacity: 0.8;
 }
