@@ -44,7 +44,7 @@ $(document).ready(function () {
         var scrolled = $(window).scrollTop();
         $('.bg-img').css('height', (jumboHeight - scrolled + 20) + 'px');
     }
-
+    
     $(window).scroll(function (e) {
         parallax();
     });
