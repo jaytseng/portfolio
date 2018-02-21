@@ -58,7 +58,7 @@ body {
 .sectionDivider p {
     font-size: 1.5em;
     font-weight: 200;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.01em;
     padding-left: 5vw;
     padding-top: 3vw;
     padding-bottom: 3vw;
@@ -87,7 +87,7 @@ body {
 @media (max-width:1200px) {
     .jumbotron h1 {
         font-size: 4.5em;
-        padding-top: 20vh;
+        padding-top: 17vh;
         padding-left: 2vh;
     }
     .jumbotron h3 {
@@ -96,12 +96,15 @@ body {
     .sectionDivider p {
         max-width: 100%;
     }
+    .sectionDivider {
+        padding: 5em;
+    }
 }
 
 @media (max-width:700px) {
     .jumbotron h1 {
         font-size: 2.5em;
-        padding-top: 22vh;
+        padding-top: 20vh;
         padding-left: 2vh;
     }
     .jumbotron h3 {
