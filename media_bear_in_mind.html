@@ -94,39 +94,7 @@
                     </div>
                 </div>
                 <footer class="row container-fluid contact" id="contact">
-                    <h1>contact</h1>
-                    <div class="footer-flexbox">
-                        <div class="footer-flexCont">
-                            <h3>find me here</h3>
-                            <p><strong>Email</strong><br> <a href="mailto:hello@jaytseng.com ">hello@jaytseng.com</a></p>
-                            <p><strong>Phone</strong><br> <a href="tel:6047640568 ">604 764 0568</a></p>
-                            <p><strong>Address</strong><br>Simon Fraser University<br>13450 – 102nd Avenue<br>Surrey, BC V3T 0A3</p>
-                            <iframe style="border:0 " src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJVWLXWNPZhVQRbGogBYEKzCc&key=AIzaSyA291LR7BV_j2hY96MFRy5XI0cWs-yUmYY " allowfullscreen></iframe>
-                        </div>
-                        <div class="footer-flexCont">
-                            <h3>message me</h3>
-                            <p>straight to my mailbox!</p>
-                            <form action="mailto:jaytseng0303@hotmail.com" method="post" enctype="text/plain">
-                                <label for="form_full_name">name</label>
-                                <input type="text" name="name" id="form_full_name" placeholder="tell me your name ">
-                                <label for="form_email">email</label>
-                                <input type="email" name="email" id="form_email" placeholder="how can i contact you? ">
-                                <label for="form_comment">messenge</label>
-                                <textarea id="form_comment" name="form_comment" placeholder="lets chat!"></textarea>
-                                <input type="submit" id="submit"></button>
-                            </form>
-                        </div>
-                        <div class="footer-flexCont ">
-                            <h3>let's be social</h3>
-                            <p>follow me on</p>
-                            <a href="https://linkedin.com ">linkedin </a>
-                            <a href="https://youtube.com "> youtube </a>
-                            <a href="httpe://facebook.com "> facebook</a>
-                            <h3>other informations</h3>
-                            <p>copyright Jay Tseng 2016</p>
-                            <a href="styleGuide.html ">style guide &amp; citations</a>
-                        </div>
-                    </div>
+
                 </footer>
             </div>
         </div>
@@ -182,6 +150,9 @@
 
 
             $(window).on('load resize', function() {
+                $('#contact').load('contact.html', function () {
+                console.log('contact loaded')
+                });
                 var winWidth = $(window).width();
                 console.log("winWidth " + winWidth);
                 if (winWidth <= 768) {
