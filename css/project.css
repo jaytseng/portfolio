@@ -32,7 +32,7 @@
  }
  
  #wrapper.toggled #sidebar-wrapper {
-     width: 65vw;
+     width: 95vw;
      /*margin-right:0;*/
  }
  
@@ -72,6 +72,10 @@
      }
      #sidebar-wrapper {
          width: 30vw;
+         max-width: 400px;
+     }
+     .sidebar-nav {
+         max-width: 400px;
      }
      #wrapper.toggled #sidebar-wrapper {
          width: 0;
@@ -83,6 +87,12 @@
      #wrapper.toggled #page-content-wrapper {
          position: relative;
          margin-right: 0;
+     }
+ }
+ 
+ @media(min-width:1333px) {
+     #wrapper {
+         padding-left: 400px;
      }
  }
  
