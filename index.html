@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='css/bootstrap.css' rel='stylesheet'>
     <link href='css/main.css' rel='stylesheet'>
+    <link href='css/project.css' rel='stylesheet'>
     <link href="css/footer.css" rel='stylesheet'>
 
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600" rel="stylesheet">
@@ -16,16 +17,19 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114047092-1"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
 
-    gtag('config', 'UA-114047092-1');
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-114047092-1');
     </script>
 </head>
 
 <body data-spy="scroll" data-target="#myNavBar">
-    <header>
+    <!-- <header>
         <nav class="navbar navbar-default navbar-fixed-top active-nav" id="myNavBar">
             <a class="navbar-brand" href="#">JAY TSENG</a>
             <ul class="nav navbar-nav nav-tabs">
@@ -61,18 +65,59 @@
                 </li>
             </ul>
         </nav>
-    </header>
+    </header> -->
+    <div id="sidebar-wrapper">
+        <div class="menu-content sidebar-nav">
+            <!--<div id="nav-icon3">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>-->
+            <a href="index.html"><span class="glyphicon glyphicon-menu-left"></span>GO HOME</a>
+            <a href="#" class="menuClose" id="menuClose">MENU <span class="glyphicon glyphicon-menu-hamburger"></span></a>
+            <h1>FULMEX RIO 2016 AD.</h1>
+            <h2>animation, advertisement</h2>
+            <p>&nbsp;</p>
+            <h2><strong>Course</strong> SFU IAT343 Animation</h2>
+            <p>&nbsp;</p>
+            <h2><strong>Team</strong> Jay Tseng, Violet Zhang, Jannet Huang, Arthur Ku</h2>
+            <h2><strong>Role</strong> Director, Cinematography, Render, &amp; Post Production</h2>
+            <h2><strong>Tools</strong> Maya 2016, Adobe Illustrator & Premiere, Audacity</h2>
+            <h2><strong>Timeframe</strong> 8 weeks</h2>
 
+            <nav class="navbar navbar-default">
+                <h2><strong>Contents</strong></h2>
+                <ul class="nav nav-stacked">
+                    <li>
+                        <a class="nav-concept" href="#concept">concept</a>
+                    </li>
+                    <li>
+                        <a class="nav-experience" href="#production">production</a>
+                    </li>
+                    <li>
+                        <a class="nav-execution" href="#execution">execution</a>
+                    </li>
+                    <li>
+                        <a class="nav-contact" href="#contact">contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <p>&nbsp;</p>
+            <h2>made in Summer 2016 for IAT 343</h2>
+        </div>
+
+    </div>
 
     <main class="row container-fluid">
         <div class="bg-img"></div>
         <div class="jumbotron" style="height:100vh;">
             <div style="height:3em;">
-                    <h1 class="css-typing" style="max-width:95%;">Empowering people to live better, explore creativity, and share their stories through innovation, design, &amp; media.</h1>
-                    <h3>Jay is currently seeking a full time position in strategy, design, or media starting Fall 2018.</h3>
-                    <div style="position:relative; bottom:1vh;">
+                <h1 class="css-typing" style="max-width:95%;">Empowering people to live better, explore creativity, and share their stories through innovation, design, &amp; media.</h1>
+                <h3>Jay is currently seeking a full time position in strategy, design, or media starting Fall 2018.</h3>
+                <div style="position:relative; bottom:1vh;">
                     <h3 class="grow" id="scrollDown" style="position:absolute; padding-top:1px; margin-top:15px;"><a href="#"><span class="glyphicon glyphicon-menu-down grow" style="color:white"></span></a> </h3>
-            </div>
+                </div>
             </div>
             <!--<div style="padding-top:45vh">
                 <h3>DESIGN &amp; MEDIA</h3>
@@ -84,14 +129,15 @@
         </div>
         <div class=" sectionDivider design" id="design">
             <h1 style="color:rgb(78, 78, 78);">design</h1>
-            <p> I strive to marry the strategic requirements of the stakeholders with the needs and desires of the users through engaging and innovative solutions. These solutions, generated through the iterative design process, can vary in fields from products, services, and mobile applications, to marketing campaign and spatial design.
+            <p> I strive to marry the strategic requirements of the stakeholders with the needs and desires of the users through engaging and innovative solutions. These solutions, generated through the iterative design process, can vary in fields from products,
+                services, and mobile applications, to marketing campaign and spatial design.
             </p>
             <div class="portfolioContainer ">
                 <div class="portfolioItem">
                     <a href="design_space_sfu.html">
-                            <img class="fade" src="img/design_space_thumbnail.jpg" alt="_space Showcase Image">
-                            <h4>_space Makerspace @ SFU Surrey</h4>
-                            <p>experience &amp; service design, design strategy</p>
+                        <img class="fade" src="img/design_space_thumbnail.jpg" alt="_space Showcase Image">
+                        <h4>_space Makerspace @ SFU Surrey</h4>
+                        <p>experience &amp; service design, design strategy</p>
                     </a>
                 </div>
                 <div class="portfolioItem">
@@ -120,15 +166,16 @@
                         <img class="fade" src="img/File_003.jpeg" alt="Rise &amp; Shine Showcase Image">
                         <h4>IAT336: Rise &amp; Shine</h4>
                         <p>material &amp; experience design
-                            </p>
+                        </p>
                     </a>
-                </div>                
+                </div>
             </div>
         </div>
 
         <div class="sectionDivider media" id="media" style="background-color:rgb(245, 245, 245);">
             <h1 style="color:rgb(78, 78, 78);">media</h1>
-            <p>My media work is focused on storytelling, enabling individuals and companies to share their stories. The teams I'm in cover all aspects of production, from the development of the initial idea to the final post production &amp; delivery. Thus, I bring to the table over 6 years of experience in the wearing multiple hats on set including directing, lighting, production, and logistics.</p>
+            <p>My media work is focused on storytelling, enabling individuals and companies to share their stories. The teams I'm in cover all aspects of production, from the development of the initial idea to the final post production &amp; delivery. Thus,
+                I bring to the table over 6 years of experience in the wearing multiple hats on set including directing, lighting, production, and logistics.</p>
             <div class="portfolioContainer ">
                 <div class="portfolioItem">
                     <a href="media_haida_now.html">
@@ -200,10 +247,11 @@
 
         <div class="sectionDivider about" id="about">
             <h1 style="color:rgb(78, 78, 78);">about</h1>
-            <p>Born in Taipei, Taiwan and initially studying engineering, I am an amalgamation of multiple disciplines and cultures. Now as a student of design &amp; media at School of Interactive Arts &amp; Technology in Canada, I strive to integrate excellent visual design elements into my technical projects, while bringing the technical knowledge into my design projects. My passion is enabling human and technological interactions through design as well as empowering people through storytelling and audio visual experiences.</p>
+            <p>Born in Taipei, Taiwan and initially studying engineering, I am an amalgamation of multiple disciplines and cultures. Now as a student of design &amp; media at School of Interactive Arts &amp; Technology in Canada, I strive to integrate excellent
+                visual design elements into my technical projects, while bringing the technical knowledge into my design projects. My passion is enabling human and technological interactions through design as well as empowering people through storytelling
+                and audio visual experiences.</p>
             <a class="resume-button" href="#">
-                <h3><span class="glyphicon glyphicon-menu-down grow"
-                style="color:dimgray"></span><span class="resume-button-text">Show Technical Specs (Resume)</span></h3>
+                <h3><span class="glyphicon glyphicon-menu-down grow" style="color:dimgray"></span><span class="resume-button-text">Show Technical Specs (Resume)</span></h3>
             </a>
             <div class="resume-shell">
                 <div class="resume">
@@ -254,7 +302,7 @@
                                 <p class="date">Dec. 2014 - Oct. 2016</p>
                                 <p>Director of photography &amp; logistic coordinator for tv show.</p>
                                 <p><a href="media_grand_bear_media.html" target="_blank">Visit Portfolio Page</a></p>
-                            </li>                            
+                            </li>
                         </ul>
                     </div>
 
@@ -285,7 +333,7 @@
                     <div class="resume-section">
                         <h3>TECHNICAL DESIGN PROJECTS</h3>
                         <ul>
-                             <li>
+                            <li>
                                 <p><strong>IAT 481: Business of Design</strong></p>
                                 <p class="date">Fall Semester 2017</p>
                                 <p>Electrical design, technical design, &amp; manufacturing.</p>
@@ -360,8 +408,7 @@
                                 <p class="date">Summer Semester 2016</p>
                                 <p>Director, set designer, camera, &amp; post production.</p>
                                 <p>Produced animated ad for Fulmex Paint with an Olympic theme.</p>
-                                <p><a href="design_fulmex_animation.html">Learn More</a>&nbsp; &nbsp;<a href="https://www.youtube.com/watch?v=Qtv_eQFD1qs"
-                                        target="_blank">Watch Online</a></p>
+                                <p><a href="design_fulmex_animation.html">Learn More</a>&nbsp; &nbsp;<a href="https://www.youtube.com/watch?v=Qtv_eQFD1qs" target="_blank">Watch Online</a></p>
                             </li>
                             <li>
                                 <p><strong>Discover Vancouver</strong></p>
@@ -398,12 +445,56 @@
     <script src="js/typed.js "></script>
     <script src="js/home.js "></script>
     <script>
-        $(document).ready(function () {
-            $('#contact').load('contact.html', function () {
-              console.log('contact loaded')
+        $(document).ready(function() {
+            $('#contact').load('contact.html', function() {
+                console.log('contact loaded')
             });
-        });
+            $('.menuClose').click(function() {
+                event.preventDefault();
+                $(this).toggleClass('open');
+                $("#wrapper ").toggleClass("toggled ");
+            });
+            $('.menuOpen').click(function() {
+                event.preventDefault();
+                $(this).toggleClass('open');
+                $("#wrapper ").toggleClass("toggled ");
+            });
 
+            $(".nav-concept ").click(function(e) {
+                e.preventDefault();
+                $(window).scrollTo('#concept', 600);
+                console.log("navbar-design selected ");
+            })
+
+            $(".nav-experience ").click(function(e) {
+                e.preventDefault();
+                $(window).scrollTo('#experience', 600);
+                console.log("navbar-media selected ");
+            })
+
+            $(".nav-execution ").click(function(e) {
+                e.preventDefault();
+                $(window).scrollTo('#execution', 600);
+            })
+
+            $(".nav-contact ").click(function(e) {
+                e.preventDefault();
+                $(window).scrollTo('#contact', 600);
+            })
+
+
+            $(window).on('load resize', function() {
+                var winWidth = $(window).width();
+                console.log("winWidth " + winWidth);
+                if (winWidth <= 768) {
+                    document.getElementById("menuClose").setAttribute("style", "display:inline; ");
+                } else {
+                    document.getElementById("menuClose").setAttribute("style", "display:none; ");
+                }
+            });
+
+
+        });
     </script>
 </body>
 
