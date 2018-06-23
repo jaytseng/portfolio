@@ -7,7 +7,8 @@
  */
 
 .hamburger {
-    padding: 15px 15px;
+    padding: 10px 15px;
+    padding-top:15px;
     display: inline-block;
     cursor: pointer;
     transition-property: opacity, filter;
@@ -24,7 +25,6 @@
     top: 1em;
     color: #fff;
     background-color: rgba(82, 82, 82, 0.322);
-    padding: 0.5em;
     z-index: 100;
 }
 
