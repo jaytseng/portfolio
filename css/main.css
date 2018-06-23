@@ -200,7 +200,7 @@ body {
     margin-left: 2.5%;
     margin-right: 2.5%;
     height: auto;
-    z-index: -10000;
+    /* z-index: -10000; */
 }
 
 .portfolioItem a {
@@ -247,9 +247,9 @@ body {
 .not-active {
     pointer-events: none;
     cursor: default;
-  }
+}
 
-.not-active img{
+.not-active img {
     filter: grayscale(70%);
     opacity: 0.8;
 }
