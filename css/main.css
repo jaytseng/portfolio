@@ -3,7 +3,7 @@ body {
 }
 
 .bg-img {
-    background: url('image/TRIP IMGS-7.jpg');
+    background: url('image/mountains.jpg');
     background-position: center;
     position: fixed;
     width: 100%;
@@ -15,7 +15,7 @@ body {
 }
 
 .jumbotron h1 {
-    font-size: 5.9em;
+    font-size: 6em;
     padding-top: 25vh;
     color: white;
     text-align: left;
@@ -31,27 +31,36 @@ body {
     margin-top: 1.25em;
     text-align: left;
     padding-left: 7vw;
-    padding-right: 4vh;
+    padding-right: 4vw;
 }
 
 .jumbotron p {
     /*padding-left: 5vw;
     padding-right: 5vw;*/
-    padding-top: 1.5vh;
-    text-align: center;
-    color: gray;
+    font-size: 1.1em;
+    font-weight: 200;
+    letter-spacing: 0.04em;
+    padding-left: 5vw;
+    padding-top: 30vh;
+    padding-right: 4vw;
+    padding-bottom: 3vh;
+    text-align: right;
+    max-width: 600px;
+    margin-right:0;
+    margin-left:auto;
+    color: white;
 }
 
 .sectionDivider {
     background-color: white;
     min-height: 65vh;
-    height: auto;
+    max-height: 100%;
     padding-left: 13em;
     padding-right: 15em;
 }
 
 .sectionDivider h1 {
-    font-size: 8em;
+    font-size: 6em;
     padding-top: 5vh;
 }
 
@@ -62,6 +71,10 @@ body {
     padding-left: 5vw;
     padding-top: 3vw;
     padding-bottom: 3vw;
+    text-align: right;
+    max-width: 500px;
+    margin-right:0;
+    margin-left:auto;
 }
 
 .grow {
@@ -78,6 +91,14 @@ body {
     font-style: italic;
 }
 
+.media{
+    color:white;
+}
+
+.media .portfolioItem h4,.media .portfolioItem p {
+    color:white;
+}
+
 @media (max-width:1500px) {
     .jumbotron h1 {
         padding-top: 15vh;
@@ -88,17 +109,21 @@ body {
     .jumbotron h1 {
         font-size: 4.5em;
         padding-top: 17vh;
-        padding-left: 2vh;
+        padding-left: 2vw;
+    }
+
+    .jumbotron p {
+        padding-top: 20vh;
     }
     .jumbotron h3 {
-        padding-left: 2vh;
+        padding-left: 2vw;
     }
 
     .sectionDivider h1{
         font-size: 4.5em;
     }
     .sectionDivider p {
-        max-width: 100%;
+        max-width: 60%;
     }
     .sectionDivider {
         padding-left: 5em;
@@ -118,6 +143,10 @@ body {
     }
     .sectionDivider h1 {
         font-size: 2.5em;
+    }
+
+    .sectionDivider p {
+        max-width: 90%;
     }
     .sectionDivider {
         padding: 1em;
@@ -156,6 +185,7 @@ body {
     height: auto;
     flex-wrap: wrap;
     padding-bottom: 3em;
+    text-align: left;
 }
 
 .resume-section {
@@ -165,6 +195,7 @@ body {
 
 .resume ul {
     padding-left: 3em;
+    text-align: left;
 }
 
 .resume ul li {
@@ -176,6 +207,7 @@ body {
     padding: 0;
     margin: 0;
     font-size: 1.1em;
+    text-align: left;
 }
 
 .portfolioContainer {

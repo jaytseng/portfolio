@@ -78,7 +78,7 @@ $(document).ready(function () {
         } else {
             e.preventDefault();
             console.log("show resume")
-            $('.resume-button-text').html("Show Technical Specs (Resume)");
+            $('.resume-button-text').html("Show Full Resume");
             $('.resume-shell').fadeOut();
             resumeBtnState = false;
         }
