@@ -9,7 +9,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='css/bootstrap.css' rel='stylesheet'>
     <link href='css/main.css' rel='stylesheet'>
-    <link href='css/project.css' rel='stylesheet'>
     <link href="css/footer.css" rel='stylesheet'>
     <link href="css/hamburger.css" rel="stylesheet">
 
@@ -29,8 +28,8 @@
     </script>
 </head>
 
-<body data-spy="scroll" data-target="#myNavBar">
-    <div id="wrapper">
+<body  data-spy="scroll" data-target="#myNavBar">
+    <div class="homepage" id="wrapper" style="padding-left:0">
         <div id="sidebar-wrapper">
             <button class="hamburger hamburger--spring" id="menuClose" type="button">
                         <span class="hamburger-box">
@@ -91,7 +90,6 @@
             </div>
 
             <div class=" sectionDivider design" id="design">
-                <h2 style="color:rgb(78, 78, 78);">design</h2>
                 <h1 class="css-typing" style="max-width:95%;">Inspiring creativity &amp; ehancing lives through design.</h1>
                 <p> I strive to marry the strategic requirements of the stakeholders with the needs and desires of the users through engaging and innovative solutions. These solutions, generated through the iterative design process, can vary in fields from
                     products, services, and mobile applications, to marketing campaign and spatial design.
@@ -137,8 +135,7 @@
             </div>
 
             <div class="sectionDivider media" id="media" style="background-color:rgb(245, 245, 245);">
-                    <h2 style="color:rgb(78, 78, 78);">media</h2>
-                    <h1 class="css-typing" style="max-width:95%;">Sharing the stories of individuals &amp; organizations through moving images.</h1>
+                     <h1 class="css-typing" style="max-width:95%;">Sharing the stories of individuals &amp; organizations through moving images.</h1>
                 <p>My media work is focused on storytelling, enabling individuals and companies to share their stories. The teams I'm in cover all aspects of production, from the development of the initial idea to the final post production &amp; delivery.
                     Thus, I bring to the table over 6 years of experience in the wearing multiple hats on set including directing, lighting, production, and logistics.</p>
                 <div class="portfolioContainer ">
@@ -410,7 +407,6 @@
     <script src="js/jquery.js "></script>
     <script src="js/jquery.scrollTo.js "></script>
     <script src="js/bootstrap.js "></script>
-    <script src="js/typed.js "></script>
     <script src="js/home.js "></script>
     <script>
         $(document).ready(function() {
@@ -481,7 +477,7 @@
                 if (winWidth <= 768) {
                     document.getElementById("menuClose").setAttribute("style", "display:inline; ");
                 } else {
-                    document.getElementById("menuClose").setAttribute("style", "display:none; ");
+                    // document.getElementById("menuClose").setAttribute("style", "display:none; ");
                     $("#wrapper ").toggleClass("toggled");
                 }
             });

@@ -32,8 +32,8 @@
  }
  
  #wrapper.toggled #sidebar-wrapper {
-     width: 95vw;
-     /*margin-right:0;*/
+     width: 95vw; 
+     /* margin-right:0; */
  }
  
  #page-content-wrapper {
@@ -299,7 +299,7 @@
  
  .sectionDivider p {
      font-size: 1.1em;
-     font-weight: 500;
+     font-weight: 200;
      letter-spacing: 0.04em;
      padding-left: 5vw;
      padding-bottom: 1vw;
