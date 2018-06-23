@@ -28,6 +28,10 @@
     z-index: 100;
 }
 
+.hamburger:focus{
+    outline: none;
+}
+
 .hamburger:hover {
     opacity: 0.7;
 }
