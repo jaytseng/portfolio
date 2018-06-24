@@ -11,6 +11,7 @@
     <link href='css/main.css' rel='stylesheet'>
     <link href="css/footer.css" rel='stylesheet'>
     <link href="css/hamburger.css" rel="stylesheet">
+    <link href="css/carousel.css" rel="stylesheet">
 
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600" rel="stylesheet">
 
@@ -92,49 +93,63 @@
                 </div>
             </div>
 
-            <div class=" sectionDivider design" id="design">
+            <div class=" sectionDivider design" id="design" style="background-color: rgba(255, 255, 255, 0.5);">
                 <h1 class="css-typing" style="max-width:85%;">Inspiring creativity &amp; ehancing lives through <span style="color: rgb(230, 87, 87)"> design.</span></h1>
-                <div class="portfolioContainer ">
-                    <div class="portfolioItem">
-                        <a href="design_space_sfu.html">
-                            <img class="fade" src="img/design_space_thumbnail.jpg" alt="_space Showcase Image">
-                            <h4>_space Makerspace @ SFU Surrey</h4>
-                            <p>experience &amp; service design, design strategy</p>
+                <div class="portfolioContainer">
+                    <div id="designCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+                            <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#designCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#designCarousel" data-slide-to="1"></li>
+                            <li data-target="#designCarousel" data-slide-to="2"></li>
+                        </ol>
+                    
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <a href="design_space_sfu.html">
+                                    <img src="img/design_space_thumbnail.jpg" alt="Los Angeles" >
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>_space Makerspace @ SFU Surrey</h5>
+                                        <p>experience &amp; service design, design strategy</p>
+                                    </div>
+                                </a>
+                            </div>
+                    
+                            <div class="item">
+                                <a href="#">
+                                    <img src="img/design_space_entrance_bulletin.jpg" alt="Chicago" >
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>_space Community Bulletin</h5>
+                                        <p>product design, permanent installation</p>
+                                    </div>
+                                </a>
+                            </div>
+                        
+                            <div class="item">
+                                <a href="design_music_in_the_streets.html">
+                                    <img src="img/design_spatial_(0).jpg" alt="New york">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Music in the Streets</h5>
+                                        <p>spacial &amp; experience design</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    
+                        <!-- Left and right controls -->
+                        <a class="left carousel-control" href="#designCarousel" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                            <span class="sr-only">Previous</span>
                         </a>
+                        <a class="right carousel-control" href="#designCarousel" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                        </div>
                     </div>
-                    <div class="portfolioItem">
-                        <a href="#" class="not-active">
-                            <img class="fade" src="img/design_space_entrance_bulletin.jpg" alt="Music In The Streets Showcase Image">
-                            <h4>Community Bulletin Installation</h4>
-                            <p>permanent installation, product design</p>
-                        </a>
-                    </div>
-                    <div class="portfolioItem">
-                        <a href="design_music_in_the_streets.html">
-                            <img class="fade" src="img/design_spatial_(0).jpg" alt="Music In The Streets Showcase Image">
-                            <h4>Music in the Streets</h4>
-                            <p>spatial &amp; experience design</p>
-                        </a>
-                    </div>
-                    <!-- <div class="portfolioItem">
-                        <a href="https://blog.kuelii.com/" target="_blank">
-                            <img class="fade" src="img/File_004.jpeg" alt="Kuelii Showcase Image">
-                            <h4>Kuelii IOT Smart Fan</h4>
-                            <p>product design &amp; business dev.</p>
-                        </a>
-                    </div>
-                    <div class="portfolioItem">
-                        <a href="#" class="not-active">
-                            <img class="fade" src="img/File_003.jpeg" alt="Rise &amp; Shine Showcase Image">
-                            <h4>IAT336: Rise &amp; Shine</h4>
-                            <p>material &amp; experience design
-                            </p>
-                        </a>
-                    </div> -->
-                </div>
-                <p> I strive to marry the strategic requirements of the stakeholders with the needs and desires of the users through engaging and innovative solutions. These solutions, generated through the iterative design process, can vary in fields from
-                    products, services, and mobile applications, to marketing campaign and spatial design.
-                </p>
+                <p>I strive to marry the strategic requirements of the stakeholders with the needs and desires of the users through engaging and innovative solutions. These solutions, generated through the iterative design process, can vary in fields from
+                    products, services, and mobile applications, to marketing campaign and spatial design.</p>
             </div>
 
             <div class="sectionDivider media" id="media" style="background-color:rgb(36, 36, 36);">

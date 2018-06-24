@@ -57,20 +57,28 @@ body {
     max-height: 100%;
     padding-left: 13em;
     padding-right: 15em;
+    position: relative;
+    top: -3vh;
 }
 
 .sectionDivider h1 {
     font-size: 6em;
-    padding-top: 5vh;
+    padding-top: 10vh;
+    position: relative;
+    z-index: 100;
+}
+
+#design h1{
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 }
 
 .sectionDivider p {
+    position: relative;
+    top: -5vh;
     font-size: 1.1em;
     font-weight: 200;
     letter-spacing: 0.01em;
-    padding-left: 5vw;
-    padding-top: 3vw;
-    padding-bottom: 3vw;
+    padding-bottom: 3vh;
     text-align: right;
     max-width: 500px;
     margin-right:0;
@@ -131,7 +139,7 @@ body {
     }
 }
 
-@media (max-width:700px) {
+@media (max-width:768px) {
     .jumbotron h1 {
         font-size: 2.5em;
         padding-top: 20vh;
@@ -147,6 +155,7 @@ body {
 
     .sectionDivider p {
         max-width: 90%;
+        top: 0;
     }
     .sectionDivider {
         padding: 1em;
