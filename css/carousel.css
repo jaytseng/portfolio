@@ -9,14 +9,25 @@
     padding-top:0;
 }
 
+#media>.portfolioContainer{
+    max-width:85vh;
+    min-height:400px;
+    position: relative;
+    top: -5vh;
+    margin-left:auto;
+    margin-right:auto;
+    padding-right: 5vh;
+    padding-top:0;
+}
+
 .carousel-inner>.item{
     width:auto;
     text-align: center;
 }
 
 .carousel-inner>.item>a>img{
-    opacity: 0.9;
-    filter: contrast(0.5);
+    opacity: 0.5;
+    filter: contrast(0.8);
 }
 
 .carousel-caption{
