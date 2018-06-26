@@ -18,16 +18,13 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114047092-1"></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-114047092-1');
-        
+    gtag('config', 'UA-114047092-1');
     </script>
+
 </head>
 
 <body  data-spy="scroll" data-target="#myNavBar">
@@ -171,7 +168,7 @@
                                 <div class="carousel-inner">
                                     <div class="item active">
                                         <a href="media_haida_now.html">
-                                            <video width="852" height="480" autoplay loop id="video">
+                                            <video width="852" height="480" autoplay loop muted>
                                                 <source src="vid/HN_Corey_sml_3.mp4" type="video/mp4">
                                             </video>
                                             <!-- <img src="img/media_haidanow_thumbnail.JPG" alt="Corey Carving" > -->
@@ -184,7 +181,7 @@
                             
                                     <div class="item">
                                         <a href="media_bear_in_mind.html">
-                                            <video width="852" height="480" autoplay loop>
+                                            <video width="852" height="480" autoplay loop muted>
                                                 <source src="vid/RR17-Bear.mp4" type="video/mp4">
                                             </video>
                                             <!-- <img src="img/media_bear_in_mind.jpg" alt="Bear In Mind" > -->
@@ -197,7 +194,10 @@
                                 
                                     <div class="item">
                                         <a href="media_freedom_boat_club.html">
-                                            <img src="img/media_fbc_boat.jpg" alt="Freedom Boat Club">
+                                            <video width="852" height="480" autoplay loop muted>
+                                                    <source src="vid/FBC-Promo.mp4" type="video/mp4">
+                                                </video>
+                                            <!-- <img src="img/media_fbc_boat.jpg" alt="Freedom Boat Club"> -->
                                             <div class="carousel-caption d-none d-md-block">
                                                 <h5>Freedom Boat Club Spring 17 Promo</h5>
                                                 <p>web, promotion, interview</p>
@@ -299,7 +299,7 @@
             </div>
 
             <div class="sectionDivider about" id="about">
-                <h1 style="color:rgb(78, 78, 78);">Made in Taiwan.</br>Grown in <span style="color: rgb(235,45,55)"> Canada.</span></h1>
+                <h1 style="color:rgb(78, 78, 78);">Made in Taiwan.<br>Grown in <span style="color: rgb(235,45,55)"> Canada.</span></h1>
                 <a class="resume-button" href="#">
                         <h3><span class="glyphicon glyphicon-menu-down grow" style="color:dimgray"></span><span class="resume-button-text">Show Full Resume</span></h3>
                 </a>
@@ -504,7 +504,6 @@
             // $("#wrapper").toggleClass("toggled ");
 
             $('.hamburger').click(function() {
-                event.preventDefault();
                 $(this).toggleClass('open');
                 $(".hamburger").toggleClass("is-active");
                 $("#wrapper ").toggleClass("toggled");
@@ -569,8 +568,8 @@
                     $("#wrapper ").toggleClass("toggled");
                 }
             });
-            
-            document.getElementById('video').play(); 
+
+ 
             
 
         });

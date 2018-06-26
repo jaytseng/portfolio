@@ -282,6 +282,10 @@ body {
     .portfolioItem {
         max-width: 80%;
     }
+    
+    .resume ul{
+        padding-left: 0;
+    }
 }
 
 .fade {
