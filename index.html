@@ -171,7 +171,10 @@
                                 <div class="carousel-inner">
                                     <div class="item active">
                                         <a href="media_haida_now.html">
-                                            <img src="img/media_haidanow_thumbnail.JPG" alt="Corey Carving" >
+                                            <video width="852" height="480" autoplay loop id="video">
+                                                <source src="vid/HN_Corey_sml_3.mp4" type="video/mp4">
+                                            </video>
+                                            <!-- <img src="img/media_haidanow_thumbnail.JPG" alt="Corey Carving" > -->
                                             <div class="carousel-caption d-none d-md-block">
                                                 <h5>Urban Haida with Corey Bulpitt</h5>
                                                 <p>documentary short subject, museum piece</p>
@@ -181,7 +184,10 @@
                             
                                     <div class="item">
                                         <a href="media_bear_in_mind.html">
-                                            <img src="img/media_bear_in_mind.jpg" alt="Bear In Mind" >
+                                            <video width="852" height="480" autoplay loop>
+                                                <source src="vid/RR17-Bear.mp4" type="video/mp4">
+                                            </video>
+                                            <!-- <img src="img/media_bear_in_mind.jpg" alt="Bear In Mind" > -->
                                             <div class="carousel-caption d-none d-md-block">
                                                 <h5>Bear in Mind</h5>
                                                 <p>short film</p>
@@ -323,16 +329,24 @@
                                     <p><a class="nav-media" href="#media">Visit Portfolio Projects</a></p>
                                 </li>
                                 <li>
-                                    <p><strong>Buggie Delivery - A Venture Connections Startup</strong></p>
+                                    <p><strong>JC Images</strong></p>
+                                    <p class="date">Aug. 2016 - Ongoing</p>
+                                    <p>Glidecam operator &amp; production day lead for wedding productions.</p>
+                                    <p><a href="https://vimeo.com/jcimages" target="_blank">Visit Company Vimeo</a></p>
+                                </li>
+                                <li>
+                                    <p><strong>Buggie Delivery - A SFU Venture Connections Startup</strong></p>
                                     <p class="date">Mar. 2016 - Nov. 2017</p>
                                     <p>Lead UX/UI designer &amp; brand development.</p>
                                     <p>Creating an on call product delivery service.</p>
                                 </li>
                                 <li>
-                                    <p><strong>JC Images</strong></p>
-                                    <p class="date">Aug. 2016 - Ongoing</p>
-                                    <p>Glidecam operator &amp; production day lead for wedding productions.</p>
-                                    <p><a href="https://vimeo.com/jcimages" target="_blank">Visit Company Vimeo</a></p>
+                                    <p><strong>Grand Bear Media: Discover Vancouver</strong></p>
+                                    <p class="date">Dec. 2014 - Oct. 2016</p>
+                                    <p>Director of photography &amp; logistic coordinator.</p>
+                                    <p>Produced with Grand Bear Media for Tianjin Television &amp; Youtube.</p>
+                                    <p>Showing off the sights of BC, funded by Destination BC.</p>
+                                    <p><a href="media_grand_bear_media.html" target="_blank">Visit Portfolio Page</a></p>
                                 </li>
                             </ul>
                         </div>
@@ -412,9 +426,9 @@
                                 <li>
                                     <p><strong>Museum of Vancouver: Haida Now</strong></p>
                                     <p class="date">Oct. 2016 - Ongoing</p>
-                                    <p>Telling the story of reconciliation and the urban Haida experience</p>
-                                    <p>through artists Corey Bulpitt, and MOV curator Kwiaahwah Jones.</p>
-                                    <p><a href="#">Visit Portfolio Page</a></p>
+                                    <p>Director, cinematographer</p>
+                                    <p>Telling the story of reconciliation and the urban Haida experience through artists Corey Bulpitt, and MOV curator Kwiaahwah Jones.</p>
+                                    <p><a href="media_haida_now.html">Visit Portfolio Page</a></p>
                                 </li>
                                 <li>
                                     <p><strong>IAT 343: Animation</strong></p>
@@ -422,14 +436,6 @@
                                     <p>Director, set designer, camera, &amp; post production.</p>
                                     <p>Produced animated ad for Fulmex Paint with an Olympic theme.</p>
                                     <p><a href="design_fulmex_animation.html">Learn More</a>&nbsp; &nbsp;<a href="https://www.youtube.com/watch?v=Qtv_eQFD1qs" target="_blank">Watch Online</a></p>
-                                </li>
-                                <li>
-                                    <p><strong>Discover Vancouver</strong></p>
-                                    <p class="date">Dec. 2014 - Oct. 2016</p>
-                                    <p>Director of photography &amp; logistic coordinator.</p>
-                                    <p>Produced with Grand Bear Media for Tianjin Television &amp; Youtube.</p>
-                                    <p>Showing off the sights of BC, funded by Destination BC.</p>
-                                    <p><a href="media_grand_bear_media.html" target="_blank">Visit Portfolio Page</a></p>
                                 </li>
                                 <li>
                                     <p><strong>IAT 202: New Media Images</strong></p>
@@ -448,6 +454,7 @@
                                         <p class="date">Jun. 2011 - June 2013</p>
                                         <p>Board of director, director of ceremonies, event coordinator.</p>
                                         <p>Represent the program's youth on the board of directors.</p>
+                                        <p>&nbsp;</p>
                                         <p class="date">Jun. 2013 - Ongoing</p>
                                         <p>Director of ceremonies, event coordinator.</p>
                                         <p>Prepare live media productions &amp; events.</p>
@@ -562,6 +569,9 @@
                     $("#wrapper ").toggleClass("toggled");
                 }
             });
+            
+            document.getElementById('video').play(); 
+            
 
         });
     </script>
