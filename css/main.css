@@ -46,8 +46,8 @@ body {
     padding-bottom: 3vh;
     text-align: right;
     max-width: 600px;
-    margin-right:0;
-    margin-left:auto;
+    margin-right: 0;
+    margin-left: auto;
     color: white;
 }
 
@@ -67,11 +67,11 @@ body {
     z-index: 100;
 }
 
-#design h1{
+#design h1 {
     text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 }
 
-#media h1{
+#media h1 {
     /* text-shadow: -1px 0 rgb(36, 36, 36), 0 1px rgb(36, 36, 36), 1px 0 rgb(36, 36, 36), 0 -1px rgb(36, 36, 36); */
     text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 }
@@ -85,8 +85,8 @@ body {
     padding-bottom: 3vh;
     text-align: right;
     max-width: 500px;
-    margin-right:0;
-    margin-left:auto;
+    margin-right: 0;
+    margin-left: auto;
 }
 
 .grow {
@@ -103,12 +103,13 @@ body {
     font-style: italic;
 }
 
-.media{
-    color:white;
+.media {
+    color: white;
 }
 
-.media .portfolioItem h4,.media .portfolioItem p {
-    color:white;
+.media .portfolioItem h4,
+.media .portfolioItem p {
+    color: white;
 }
 
 @media (max-width:1500px) {
@@ -123,15 +124,13 @@ body {
         padding-top: 17vh;
         padding-left: 2vw;
     }
-
     .jumbotron p {
         padding-top: 20vh;
     }
     .jumbotron h3 {
         padding-left: 2vw;
     }
-
-    .sectionDivider h1{
+    .sectionDivider h1 {
         font-size: 4.5em;
     }
     .sectionDivider p {
@@ -156,7 +155,6 @@ body {
     .sectionDivider h1 {
         font-size: 2.5em;
     }
-
     .sectionDivider p {
         max-width: 90%;
         top: 0;
@@ -204,13 +202,13 @@ body {
 .resume-section {
     flex-grow: 1;
     width: 30%;
-    min-width: 400px;
+    min-width: 350px;
 }
 
 .resume ul {
     padding-left: 3em;
     text-align: left;
-    margin-top: 4em;
+    margin-top: 2em;
 }
 
 .resume ul li {
@@ -223,6 +221,7 @@ body {
     margin: 0;
     font-size: 0.9em;
     text-align: left;
+    top: 0;
 }
 
 .portfolioContainer {
@@ -282,8 +281,7 @@ body {
     .portfolioItem {
         max-width: 80%;
     }
-    
-    .resume ul{
+    .resume ul {
         padding-left: 0;
     }
 }
@@ -337,7 +335,7 @@ body {
 }
 
 #wrapper.toggled #sidebar-wrapper {
-    width: 70vw; 
+    width: 70vw;
     /* margin-right:0; */
 }
 
@@ -351,6 +349,8 @@ body {
     position: absolute;
     margin-right: -250px;
 }
+
+
 /* Sidebar Styles */
 
 .sidebar-nav {
@@ -360,7 +360,6 @@ body {
     margin: 0;
     padding: 0;
     list-style: none;
-
 }
 
 .sidebar-nav>.sidebar-brand {

@@ -8,7 +8,7 @@
 
 .hamburger {
     padding: 10px 15px;
-    padding-top:15px;
+    padding-top: 15px;
     display: inline-block;
     cursor: pointer;
     transition-property: opacity, filter;
@@ -25,10 +25,10 @@
     top: 1em;
     color: #fff;
     background-color: rgba(82, 82, 82, 0.322);
-    z-index: 100;
+    z-index: 1000;
 }
 
-.hamburger:focus{
+.hamburger:focus {
     outline: none;
 }
 
