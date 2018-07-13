@@ -3,7 +3,7 @@ body {
 }
 
 .bg-img {
-    background: url('image/TRIP IMGS-7.jpg');
+    background: url('image/mountains.jpg');
     background-position: center;
     position: fixed;
     width: 100%;
@@ -15,7 +15,7 @@ body {
 }
 
 .jumbotron h1 {
-    font-size: 5.9em;
+    font-size: 6em;
     padding-top: 25vh;
     color: white;
     text-align: left;
@@ -31,37 +31,62 @@ body {
     margin-top: 1.25em;
     text-align: left;
     padding-left: 7vw;
-    padding-right: 4vh;
+    padding-right: 4vw;
 }
 
 .jumbotron p {
     /*padding-left: 5vw;
     padding-right: 5vw;*/
-    padding-top: 1.5vh;
-    text-align: center;
-    color: gray;
+    font-size: 1.1em;
+    font-weight: 200;
+    letter-spacing: 0.04em;
+    padding-left: 5vw;
+    padding-top: 30vh;
+    padding-right: 4vw;
+    padding-bottom: 3vh;
+    text-align: right;
+    max-width: 600px;
+    margin-right: 0;
+    margin-left: auto;
+    color: white;
 }
 
 .sectionDivider {
     background-color: white;
     min-height: 65vh;
-    height: auto;
+    max-height: 100%;
     padding-left: 13em;
     padding-right: 15em;
+    position: relative;
 }
 
 .sectionDivider h1 {
-    font-size: 8em;
-    padding-top: 5vh;
+    font-size: 6em;
+    padding-top: 10vh;
+    position: relative;
+    z-index: 100;
+}
+
+#design h1 {
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+#media h1 {
+    /* text-shadow: -1px 0 rgb(36, 36, 36), 0 1px rgb(36, 36, 36), 1px 0 rgb(36, 36, 36), 0 -1px rgb(36, 36, 36); */
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 }
 
 .sectionDivider p {
-    font-size: 1.5em;
+    position: relative;
+    top: -5vh;
+    font-size: 1.1em;
     font-weight: 200;
     letter-spacing: 0.01em;
-    padding-left: 5vw;
-    padding-top: 3vw;
-    padding-bottom: 3vw;
+    padding-bottom: 3vh;
+    text-align: right;
+    max-width: 500px;
+    margin-right: 0;
+    margin-left: auto;
 }
 
 .grow {
@@ -78,6 +103,15 @@ body {
     font-style: italic;
 }
 
+.media {
+    color: white;
+}
+
+.media .portfolioItem h4,
+.media .portfolioItem p {
+    color: white;
+}
+
 @media (max-width:1500px) {
     .jumbotron h1 {
         padding-top: 15vh;
@@ -88,20 +122,27 @@ body {
     .jumbotron h1 {
         font-size: 4.5em;
         padding-top: 17vh;
-        padding-left: 2vh;
+        padding-left: 2vw;
+    }
+    .jumbotron p {
+        padding-top: 20vh;
     }
     .jumbotron h3 {
-        padding-left: 2vh;
+        padding-left: 2vw;
+    }
+    .sectionDivider h1 {
+        font-size: 4.5em;
     }
     .sectionDivider p {
-        max-width: 100%;
+        max-width: 60%;
     }
     .sectionDivider {
-        padding: 5em;
+        padding-left: 5em;
+        padding-right: 5em;
     }
 }
 
-@media (max-width:700px) {
+@media (max-width:768px) {
     .jumbotron h1 {
         font-size: 2.5em;
         padding-top: 20vh;
@@ -112,8 +153,11 @@ body {
         padding-left: 2vh;
     }
     .sectionDivider h1 {
-        font-size: 5em;
-        padding-top: 5vh;
+        font-size: 2.5em;
+    }
+    .sectionDivider p {
+        max-width: 90%;
+        top: 0;
     }
     .sectionDivider {
         padding: 1em;
@@ -152,15 +196,19 @@ body {
     height: auto;
     flex-wrap: wrap;
     padding-bottom: 3em;
+    text-align: left;
 }
 
 .resume-section {
     flex-grow: 1;
-    width: auto;
+    width: 30%;
+    min-width: 350px;
 }
 
 .resume ul {
     padding-left: 3em;
+    text-align: left;
+    margin-top: 2em;
 }
 
 .resume ul li {
@@ -171,7 +219,9 @@ body {
 .resume ul li p {
     padding: 0;
     margin: 0;
-    font-size: 1.1em;
+    font-size: 0.9em;
+    text-align: left;
+    top: 0;
 }
 
 .portfolioContainer {
@@ -231,6 +281,9 @@ body {
     .portfolioItem {
         max-width: 80%;
     }
+    .resume ul {
+        padding-left: 0;
+    }
 }
 
 .fade {
@@ -252,4 +305,171 @@ body {
 .not-active img {
     filter: grayscale(70%);
     opacity: 0.8;
+}
+
+#wrapper {
+    padding-left: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled {
+    padding-left: 0px;
+}
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    left: 250px;
+    width: 0;
+    height: 100%;
+    margin-left: -250px;
+    overflow-y: auto;
+    background: #111111;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    width: 70vw;
+    /* margin-right:0; */
+}
+
+#page-content-wrapper {
+    width: 100%;
+    position: absolute;
+    padding: 15px;
+}
+
+#wrapper.toggled #page-content-wrapper {
+    position: absolute;
+    margin-right: -250px;
+}
+
+
+/* Sidebar Styles */
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 30vw;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav>.sidebar-brand {
+    height: 65px;
+    font-size: 18px;
+    line-height: 60px;
+}
+
+@media(min-width:768px) {
+    #wrapper {
+        padding-left: 30vw;
+    }
+    #wrapper.toggled {
+        padding-left: 0;
+    }
+    #sidebar-wrapper {
+        width: 30vw;
+        max-width: 300px;
+    }
+    .sidebar-nav {
+        max-width: 300px;
+    }
+    #wrapper.toggled #sidebar-wrapper {
+        width: 0;
+    }
+    #page-content-wrapper {
+        padding: 20px;
+        position: relative;
+    }
+    #wrapper.toggled #page-content-wrapper {
+        position: relative;
+        margin-right: 0;
+    }
+}
+
+@media(min-width:1333px) {
+    #wrapper {
+        padding-left: 300px;
+    }
+}
+
+@media(max-width:768px) {
+    .sidebar-nav {
+        width: 80vw;
+    }
+}
+
+.menu-content {
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.menu-content a {
+    font-size: 1em;
+    color: lightgrey;
+    text-decoration: none;
+    font-weight: 100;
+    letter-spacing: 0.1em;
+    -webkit-transition: text-decoration 0.1s ease-in-out;
+    -moz-transition: text-decoration 0.1s ease-in-out;
+    transition: text-decoration 0.1s ease-in-out;
+}
+
+.menu-content a:hover {
+    color: white;
+}
+
+.menu-content h1 {
+    padding-top: 3vh;
+    color: white;
+}
+
+.menu-content h2 {
+    font-size: 1.1em;
+    font-weight: 200;
+    color: lightgray;
+    margin-top: 0.5em;
+}
+
+.menu-content p {
+    color: gray;
+    font-weight: 100;
+    margin-bottom: 0.25em;
+}
+
+.menuClose {
+    position: absolute;
+    right: 0.5em;
+}
+
+.menuOpen {
+    position: fixed;
+    top: 1em;
+    color: white;
+    background: rgba(50, 50, 50, 0.5);
+    padding: 0.5em;
+    z-index: 100;
+}
+
+.menuOpen,
+.menuOpen:visited,
+.menuOpen:active {
+    color: white;
+    text-decoration: none;
+}
+
+.menuOpen:hover {
+    color: rgb(78, 78, 78);
+    background: rgba(200, 200, 200, 0.75);
+    text-decoration: none;
 }

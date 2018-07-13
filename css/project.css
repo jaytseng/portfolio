@@ -32,8 +32,8 @@
  }
  
  #wrapper.toggled #sidebar-wrapper {
-     width: 95vw;
-     /*margin-right:0;*/
+     width: 95vw; 
+     /* margin-right:0; */
  }
  
  #page-content-wrapper {
@@ -130,8 +130,8 @@
  }
  
  .menu-content h2 {
-     font-size: 1.2em;
-     font-weight: 100;
+     font-size: 1.1em;
+     font-weight: 200;
      color: lightgray;
      margin-top: 0.5em;
  }
@@ -279,9 +279,9 @@
  }
  
  .sectionDivider h2 {
-     font-size: 3em;
+     font-size: 2em;
      padding-top: 2vh;
-     padding-bottom: 6vh;
+     padding-bottom: 4vh;
      padding-left: 15px;
      padding-right: 15px;
      max-width: 95%;
@@ -298,9 +298,9 @@
  }
  
  .sectionDivider p {
-     font-size: 1.5em;
+     font-size: 1.1em;
      font-weight: 200;
-     letter-spacing: 0.025em;
+     letter-spacing: 0.04em;
      padding-left: 5vw;
      padding-bottom: 1vw;
      max-width: 95%;
