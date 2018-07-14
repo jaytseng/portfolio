@@ -32,7 +32,7 @@
  }
  
  #wrapper.toggled #sidebar-wrapper {
-     width: 95vw; 
+     width: 95vw;
      /* margin-right:0; */
  }
  
@@ -363,7 +363,7 @@
  
  @media (max-width:1000px) {
      .sectionDivider h1 {
-         font-size: 5em;
+         font-size: 4em;
          padding-top: 2vh;
      }
      .sectionDivider {
