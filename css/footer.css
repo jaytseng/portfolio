@@ -143,4 +143,8 @@ footer {
         color: white;
         padding-left: 0vh;
     }
+    footer {
+        padding-right: 2em;
+        padding-left: 2em;
+    }
 }
