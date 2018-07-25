@@ -12,15 +12,18 @@
     <link href="css/footer.css" rel='stylesheet'>
 
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600" rel="stylesheet">
-    
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114047092-1"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
 
-    gtag('config', 'UA-114047092-1');
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-114047092-1');
     </script>
 </head>
 
@@ -85,12 +88,9 @@
                             <a href="#" class="menuOpen"><span class="glyphicon glyphicon-menu-hamburger"></span> MENU</a>
                             <div class=" sectionDivider " id="concept">
                                 <h1 style="color:gray; ">concept</h1>
-                                <p>Music in the Streets is a multi-program urban square underneath the Expo Line guide-rail
-                                    at Surrey Central Station. The design, inspired by the urge of professionals and pedestrians
-                                    to perform, consists of two sections - the stage and the stands. The design is styled
-                                    to fit into the new infrastructure around Surrey Central, thus the project materials
-                                    are concrete, metal, and exposed wood. The space is for both casual lounging while passing
-                                    by and cultural and artistic events. Designed for Surrey PARKit Design Challenge 2015.
+                                <p>Music in the Streets is a multi-program urban square underneath the Expo Line guide-rail at Surrey Central Station. The design, inspired by the urge of professionals and pedestrians to perform, consists of two sections
+                                    - the stage and the stands. The design is styled to fit into the new infrastructure around Surrey Central, thus the project materials are concrete, metal, and exposed wood. The space is for both casual lounging while
+                                    passing by and cultural and artistic events. Designed for Surrey PARKit Design Challenge 2015.
                                 </p>
                                 <figure>
                                     <img src="img/design_spatial_(1).jpg" alt="Top View of Layout">
@@ -100,13 +100,9 @@
                             </div>
                             <div class=" sectionDivider " id="experience">
                                 <h1 style="color:gray; ">experience</h1>
-                                <p>The vision behind this space is not only for passers by to stop but also to provide a space
-                                    where the community can come together on a regular basis to enjoy and experience the
-                                    diverse cultural and artistic backgrounds of the residents. Such events would include
-                                    musical concerts, cultural ar t exhibits, and family friendly performances. Bonds created
-                                    in such events would add greatly to the value of the surrounding community. Lighting
-                                    through the use of LED strips and bulbs ensures that the space can continue to be used
-                                    well into the evening. This also provides a safer environment in the night.
+                                <p>The vision behind this space is not only for passers by to stop but also to provide a space where the community can come together on a regular basis to enjoy and experience the diverse cultural and artistic backgrounds
+                                    of the residents. Such events would include musical concerts, cultural ar t exhibits, and family friendly performances. Bonds created in such events would add greatly to the value of the surrounding community. Lighting
+                                    through the use of LED strips and bulbs ensures that the space can continue to be used well into the evening. This also provides a safer environment in the night.
                                 </p>
                                 <figure>
                                     <img src="img/design_spatial_(2).jpg" alt="View of the stands from the stage.">
@@ -119,13 +115,9 @@
                             </div>
                             <div class=" sectionDivider " id="execution">
                                 <h1 style="color:gray; ">execution</h1>
-                                <p>The shelter is an amalgamation of steel plates and acrylic. Designed to feel weightless two
-                                    materials have been shortlisted for the roof of the shelter, steel and acrylic/Plexiglas.
-                                    Further discussions with the contractors and engineers are required for decisions. The
-                                    remaining structures are to be constructed from wood. Most surfaces will be particleboard
-                                    or plywood treated with a waterproof coating before additional treatment is applied.
-                                    Surfaces in white in the images can be coated with chalkboard paint to encourage interaction.
-                                    The faux concrete surfaces are wood that is either vinyl wrapped or painted.
+                                <p>The shelter is an amalgamation of steel plates and acrylic. Designed to feel weightless two materials have been shortlisted for the roof of the shelter, steel and acrylic/Plexiglas. Further discussions with the contractors
+                                    and engineers are required for decisions. The remaining structures are to be constructed from wood. Most surfaces will be particleboard or plywood treated with a waterproof coating before additional treatment is applied.
+                                    Surfaces in white in the images can be coated with chalkboard paint to encourage interaction. The faux concrete surfaces are wood that is either vinyl wrapped or painted.
                                 </p>
                                 <figure>
                                     <img src="img/design_spatial_(5).jpg" alt="View of the stands from the stage.">
@@ -135,22 +127,22 @@
                                     <img src="img/design_spatial_(6).jpg" alt="View of the stage from the stands.">
                                     <figcaption>View of the stands, isometric view.</figcaption>
                                 </figure>
-                               
+
                             </div>
 
                         </div>
                     </div>
+                    <footer class="row container-fluid contact" id="contact">
+
+                    </footer>
                 </div>
-                <footer class="row container-fluid contact" id="contact">
 
-                </footer>
+
+
+
+
             </div>
-
-
-    
-    
-    
-    </div></main>
+    </main>
 
 
 
@@ -160,45 +152,45 @@
     <script src="js/bootstrap.js "></script>
 
     <script>
-        $(document).ready(function () {
-            $('#contact').load('contact.html', function () {
-              console.log('contact loaded')
+        $(document).ready(function() {
+            $('#contact').load('contact.html', function() {
+                console.log('contact loaded')
             });
-            $('.menuClose').click(function(){
+            $('.menuClose').click(function() {
                 event.preventDefault();
                 $(this).toggleClass('open');
                 $("#wrapper ").toggleClass("toggled ");
             });
-            $('.menuOpen').click(function(){
+            $('.menuOpen').click(function() {
                 event.preventDefault();
                 $(this).toggleClass('open');
                 $("#wrapper ").toggleClass("toggled ");
             });
 
-            $(".nav-concept ").click(function (e) {
+            $(".nav-concept ").click(function(e) {
                 e.preventDefault();
                 $(window).scrollTo('#concept', 600);
                 console.log("navbar-design selected ");
             })
 
-            $(".nav-experience ").click(function (e) {
+            $(".nav-experience ").click(function(e) {
                 e.preventDefault();
                 $(window).scrollTo('#experience', 600);
                 console.log("navbar-media selected ");
             })
 
-            $(".nav-execution ").click(function (e) {
+            $(".nav-execution ").click(function(e) {
                 e.preventDefault();
                 $(window).scrollTo('#execution', 600);
             })
 
-            $(".nav-contact ").click(function (e) {
+            $(".nav-contact ").click(function(e) {
                 e.preventDefault();
                 $(window).scrollTo('#contact', 600);
             })
 
-            
-             $(window).on('load resize', function(){
+
+            $(window).on('load resize', function() {
                 var winWidth = $(window).width();
                 console.log("winWidth" + winWidth);
                 if (winWidth <= 768) {
@@ -221,8 +213,6 @@
         //         document.getElementById("nav-icon3 ").setAttribute("style ", "display:none; ");
         //     }
         // })
-        
-        
     </script>
 </body>
 
