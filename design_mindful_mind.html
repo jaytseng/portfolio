@@ -12,12 +12,15 @@
     <link href="css/footer.css" rel='stylesheet'>
 
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600" rel="stylesheet">
-    
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114047092-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
         gtag('js', new Date());
 
         gtag('config', 'UA-114047092-1');
@@ -40,7 +43,7 @@
                         <span></span>
                     </div>-->
                     <a href="index.html"><span class="glyphicon glyphicon-menu-left"></span>GO HOME</a>
-                    <a href="#" class="menuClose" id="menuClose">MENU <span class="glyphicon glyphicon-menu-hamburger"></span></a>
+                    <a href="#" class="menuClose" id="menuClose">CLOSE MENU <span class="glyphicon glyphicon-menu-hamburger"></span></a>
                     <h1>MINDFUL MIND WEARABLE</h1>
                     <h2>interaction design &amp; prototyping</h2>
                     <p>&nbsp;</p>
@@ -55,7 +58,7 @@
             <div id="page-content-wrapper" style="padding:0;">
                 <div class="container-fluid">
                     <div class="row">
-                            <a href="#" class="menuOpen"><span class="glyphicon glyphicon-menu-hamburger"></span> MENU</a>
+                        <a href="#" class="menuOpen"><span class="glyphicon glyphicon-menu-hamburger"></span> MENU</a>
                         <figure>
                             <img src="img/mindful_mind.jpg" alt="Mindful mind brief.">
                         </figure>
@@ -66,10 +69,11 @@
             </div>
 
 
-    
-    
-    
-    </div></main>
+
+
+
+        </div>
+    </main>
 
 
 
@@ -79,45 +83,45 @@
     <script src="js/bootstrap.js "></script>
 
     <script>
-        $(document).ready(function () {
-            $('#contact').load('contact.html', function () {
-              console.log('contact loaded')
+        $(document).ready(function() {
+            $('#contact').load('contact.html', function() {
+                console.log('contact loaded')
             });
-            $('.menuClose').click(function(){
+            $('.menuClose').click(function() {
                 event.preventDefault();
                 $(this).toggleClass('open');
                 $("#wrapper ").toggleClass("toggled ");
             });
-            $('.menuOpen').click(function(){
+            $('.menuOpen').click(function() {
                 event.preventDefault();
                 $(this).toggleClass('open');
                 $("#wrapper ").toggleClass("toggled ");
             });
 
-            $(".nav-concept ").click(function (e) {
+            $(".nav-concept ").click(function(e) {
                 e.preventDefault();
                 $(window).scrollTo('#concept', 600);
                 console.log("navbar-design selected ");
             })
 
-            $(".nav-experience ").click(function (e) {
+            $(".nav-experience ").click(function(e) {
                 e.preventDefault();
                 $(window).scrollTo('#experience', 600);
                 console.log("navbar-media selected ");
             })
 
-            $(".nav-execution ").click(function (e) {
+            $(".nav-execution ").click(function(e) {
                 e.preventDefault();
                 $(window).scrollTo('#execution', 600);
             })
 
-            $(".nav-contact ").click(function (e) {
+            $(".nav-contact ").click(function(e) {
                 e.preventDefault();
                 $(window).scrollTo('#contact', 600);
             })
 
-            
-             $(window).on('load resize', function(){
+
+            $(window).on('load resize', function() {
                 var winWidth = $(window).width();
                 console.log("winWidth" + winWidth);
                 if (winWidth <= 768) {
@@ -140,8 +144,6 @@
         //         document.getElementById("nav-icon3 ").setAttribute("style ", "display:none; ");
         //     }
         // })
-        
-        
     </script>
 </body>
 
