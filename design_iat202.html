@@ -128,9 +128,9 @@
                                     context of the work and learning they’re doing within the structure of the course, allowing them to understand the purpose of the assignment. This makes both the work and the learning more meaningful. Only once the
                                     context is established do we go into the lecture or demo. </p>
                                 <h4 style="color:gray; padding-left: 5vw;">3. Inspire then Explain</h4>
-                                <p>Instead of teaching the technique basics first and showing examples later, I like to explain and show how skills are applied first. This is to inspire students and provides context to the students into why they need should pay attention the content
-                                    that is to come. An example would be at the beginning of the class, knowing the students come from different backgrounds, I spend a moment to explain how in their fields knowledge from the class can be applied. Another
-                                    example application of this is during the lighting workshop where I do a demo of how lighting can affect the perception on set before going into the technical lighting setup. </p>
+                                <p>Instead of teaching the technique basics first and showing examples later, I like to explain and show how skills are applied first. This is to inspire students and provides context to the students into why they need should
+                                    pay attention the content that is to come. An example would be at the beginning of the class, knowing the students come from different backgrounds, I spend a moment to explain how in their fields knowledge from the
+                                    class can be applied. Another example application of this is during the lighting workshop where I do a demo of how lighting can affect the perception on set before going into the technical lighting setup. </p>
                                 <h4 style="color:gray; padding-left: 5vw;">4. Casual &amp; Approachable Environment</h4>
                                 <p>IOn the first day of the course, I attempt to remove the seniority gap between students and lab instructor. I establish that the classroom would be a casual learning environment to ask questions whenever one arises, and
                                     to challenge what I’m teaching. Not only does this allow students to learn at their own pace but at times improves the content as it challenges my knowledge of the field and provides learning opportunities. I do not
@@ -151,23 +151,24 @@
                                     content that directly enforced the lecture theory. Also proposed was grouping the individual skill building exercises that was originally spread across the semester into a more intensive mini project. This works to
                                     give the students all the fundamental skills create their first films and get an idea of how the final project will be graded before being put into teams to tackle the larger group film. This proposed structure was
                                     tested out in Spring 2017 and was adopted on the subsequent semesters with modifications to the likings of the individual instructors. </p>
-                                    <figure>
-                                            <img src="img/202_reorgScreenshot.JPG" alt="202 proposal">
-                                            <figcaption>Screenshot from the schedule reorganization proposal of the proposed re-organized schedule.</figcaption>
-                                        </figure>
+                                <figure>
+                                    <img src="img/202_reorgScreenshot.JPG" alt="202 proposal">
+                                    <figcaption>Screenshot from the schedule reorganization proposal of the proposed re-organized schedule.</figcaption>
+                                </figure>
                                 <h3 style="color:gray;">Competition &amp; Recognition </h3>
                                 <p>I firmly believe hard work should be recognized. While the course always had a final screening with all the films, starting in Fall 2016, having your film be played in the final screening became a competitive endeavor with
-                                    prizes. This promotes healthy competition among teams and encourages teams to strive for to make the final screening. In Spring 2017, I built <a href="https://iat202.com"><strong>iat202.com</strong> </a> to compile and celebrate the work of all the students. The students
-                                    of the proceeding terms have found the site to be a source of inspiration and showcase of the quality we seek in the class. </p>
-                                    <figure>
-                                        <img src="img/202_classPhoto.JPG" alt="202 Final Screening">
-                                        <figcaption>202 Final Screening Award Winners from Fall 2017 class.</figcaption>
-                                    </figure>
+                                    prizes. This promotes healthy competition among teams and encourages teams to strive for to make the final screening. In Spring 2017, I built <a href="https://iat202.com"><strong>iat202.com</strong> </a> to compile
+                                    and celebrate the work of all the students. The students of the proceeding terms have found the site to be a source of inspiration and showcase of the quality we seek in the class. </p>
+                                <figure>
+                                    <img src="img/202_classPhoto.JPG" alt="202 Final Screening">
+                                    <figcaption>202 Final Screening Award Winners from Fall 2017 class.</figcaption>
+                                </figure>
                             </div>
                             <div class=" sectionDivider " id="execution">
                                 <h1 style="color:gray; ">Result</h1>
-                                <p style="margin-bottom: 4em;">The results of the lab material design decisions cannot be easily quantified however together they have contributed to an improved course experience based on the semester end evaluations. My average rating from semester end evalutations over the past 4 tearms is 9.1/10 for the tutorial overall rating and 9.2/10 for teaching ability.  Regarding improvements to the students performance, while many factors affect the students
-                                    projects, once the changes were implemented an improvement in quality of the final project was noticed by the teaching staff.</p>
+                                <p style="margin-bottom: 4em;">The results of the lab material design decisions cannot be easily quantified however together they have contributed to an improved course experience based on the semester end evaluations. My average rating from semester
+                                    end evalutations over the past 4 tearms is 9.1/10 for the tutorial overall rating and 9.2/10 for teaching ability. Regarding improvements to the students performance, while many factors affect the students projects,
+                                    once the changes were implemented an improvement in quality of the final project was noticed by the teaching staff.</p>
                             </div>
                         </div>
                     </div>
@@ -209,27 +210,42 @@
                 e.preventDefault();
                 $(window).scrollTo('#concept', 600);
                 console.log("navbar-design selected ");
+                if ($(window).width() <= 768) {
+                    $("#wrapper ").toggleClass("toggled");
+                }
             })
 
             $(".nav-experience ").click(function(e) {
                 e.preventDefault();
                 $(window).scrollTo('#experience', 600);
                 console.log("navbar-media selected ");
+                if ($(window).width() <= 768) {
+                    $("#wrapper ").toggleClass("toggled");
+                }
             })
 
             $(".nav-execution ").click(function(e) {
                 e.preventDefault();
                 $(window).scrollTo('#execution', 600);
+                if ($(window).width() <= 768) {
+                    $("#wrapper ").toggleClass("toggled");
+                }
             })
 
             $(".nav-contact ").click(function(e) {
                 e.preventDefault();
                 $(window).scrollTo('#contact', 600);
+                if ($(window).width() <= 768) {
+                    $("#wrapper ").toggleClass("toggled");
+                }
             })
 
             $(".nav-result").click(function(e) {
                 e.preventDefault();
                 $(window).scrollTo('#result', 600);
+                if ($(window).width() <= 768) {
+                    $("#wrapper ").toggleClass("toggled");
+                }
             })
 
 

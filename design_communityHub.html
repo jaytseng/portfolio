@@ -115,14 +115,15 @@
                                     the project is greenlit. Ultimately, the project had a budget of $600 to be spent on materials only.</p>
                                 <figure>
                                     <img src="img/comHub_before.JPG" alt="Community Hub Before">
-                                    <figcaption>The location of the Community Hub before any modifications. The railings cannot be moved or removed.</figcaption>
+                                    <figcaption>The location of the Community Hub during a test fit of the scaffolding. The railings for the ramp cannot be moved or removed.</figcaption>
                                 </figure>
                                 <h3 style="color:gray; ">Location</h3>
                                 <figure>
                                     <img src="img/comHub_location.jpg" alt="Community Hub Before">
                                     <figcaption>The location of the Community Hub before any modifications.</figcaption>
                                 </figure>
-                                <p>SECTION WIP</p>
+                                <p>Its placement in the room, by the one and only entrance to the makerspace, is designed to allow users of the space pause as they transition from outdoors into the space. It serves as an informal welcome into the makerspace.
+                                    As such, the Community Hub is built to allow for a wordless communication of information that is available at glance.</p>
 
                                 <h3 style="color:gray; ">Technical Design &amp; Features</h3>
                                 <p>SECTION WIP</p>
@@ -130,25 +131,30 @@
                                 <h3 style="color:gray; ">Prototyping &amp; Iterations</h3>
                                 <p>SECTION WIP</p>
                                 <figure>
-                                        <img src="img/comHub_partsBreakdown.JPG" alt="  ">
-                                        <figcaption>...</figcaption>
-                                    </figure>
-                                    <figure>
-                                            <img src="img/comHub_postsAnchored.JPG" alt="  ">
-                                            <figcaption>_...</figcaption>
-                                        </figure>
-                                        <figure>
-                                                <img src="img/comHub_placement.JPG" alt="  ">
-                                                <figcaption>...</figcaption>
-                                            </figure>
-                                            <figure>
-                                                    <img src="img/comHub_completed.JPG" alt="  ">
-                                                    <figcaption>...</figcaption>
-                                                </figure>
-                                                <figure>
-                                                        <img src="img/comHub_autoLightInstall.JPG" alt="  ">
-                                                        <figcaption>_...</figcaption>
-                                                    </figure>
+                                    <img src="img/comHub_partsBreakdown.JPG" alt="  ">
+                                    <figcaption>Parts for attaching the posts to railing, sorted. </figcaption>
+                                </figure>
+                                <figure>
+                                    <img src="img/comHub_postsAnchored.JPG" alt="  ">
+                                    <figcaption>Aluminum posts attached to the railing.</figcaption>
+                                </figure>
+                                <figure>
+                                    <img src="img/comHub_placement.JPG" alt="  ">
+                                    <figcaption>The three, bulletin, whiteboard, and gitial display, components laid out to test alignment before attachment to the posts.</figcaption>
+                                </figure>
+                                <figure>
+                                    <img src="img/comHub_ohShit.JPG" alt="  ">
+                                    <figcaption>At some point in transport, the digital display was damaged necessitating a rapid sourcing and rebuilding of the digital display unit. </figcaption>
+                                </figure>
+                                <figure>
+                                    <img src="img/comHub_completed.JPG" alt="  ">
+                                    <figcaption>The community hub fully fitted into position. The replacement display, with different size and fit specifications necessitated a complete redesign of the unit and a new 3D printed set of speaker grilles. Magic Mirror
+                                        is being tested.</figcaption>
+                                </figure>
+                                <figure>
+                                    <img src="img/comHub_autoLightInstall.JPG" alt="  ">
+                                    <figcaption>_...</figcaption>
+                                </figure>
 
                             </div>
                             <div class=" sectionDivider " id="result">
@@ -196,27 +202,42 @@
                 e.preventDefault();
                 $(window).scrollTo('#concept', 600);
                 console.log("navbar-design selected ");
+                if (winWidth <= 768) {
+                    $("#wrapper ").toggleClass("toggled");
+                }
             })
 
             $(".nav-experience ").click(function(e) {
                 e.preventDefault();
                 $(window).scrollTo('#experience', 600);
                 console.log("navbar-media selected ");
+                if ($(window).width() <= 768) {
+                    $("#wrapper ").toggleClass("toggled");
+                }
             })
 
             $(".nav-execution ").click(function(e) {
                 e.preventDefault();
                 $(window).scrollTo('#execution', 600);
+                if ($(window).width() <= 768) {
+                    $("#wrapper ").toggleClass("toggled");
+                }
             })
 
             $(".nav-contact ").click(function(e) {
                 e.preventDefault();
                 $(window).scrollTo('#contact', 600);
+                if ($(window).width() <= 768) {
+                    $("#wrapper ").toggleClass("toggled");
+                }
             })
 
             $(".nav-result").click(function(e) {
                 e.preventDefault();
                 $(window).scrollTo('#result', 600);
+                if ($(window).width() <= 768) {
+                    $("#wrapper ").toggleClass("toggled");
+                }
             })
 
 
