@@ -110,3 +110,38 @@ a{
     padding-top:0.25em;
     padding-bottom:0.5em;
 }
+
+/* About: Content */
+.aboutHeadline{
+    margin-top: 3em;
+}
+
+.aboutHeadline h1{
+    width:85%;
+}
+
+.aboutBody{
+    display: inline-flex;
+    margin-top: 3em;
+}
+
+.aboutContent{
+    width: 40vw;
+    margin: 0;
+}
+
+.aboutContent p{
+    padding-top: 5em;
+    padding-left: 15%;
+    padding-right: 15%;
+    line-height: 2em;
+}
+
+.aboutImg{
+    float: right;
+    width:40vw;
+}
+
+.aboutImg img{
+    width:100%;
+}
