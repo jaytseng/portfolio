@@ -145,3 +145,31 @@ a{
 .aboutImg img{
     width:100%;
 }
+
+/* Resume Section */
+.resume{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-top: 1em;
+}
+
+.resume-section{
+    margin-top: 3em;
+    width: 33%;
+    flex-basis: 33%;
+}
+
+.resume-section li{
+    margin-top: 1em;
+    list-style-type:none;
+}
+
+.resume-section p{
+    margin: 0;
+}
+
+.resume-section p a{
+    font-weight: 500;
+}
