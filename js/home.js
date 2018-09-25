@@ -1,35 +1,35 @@
-$(document).ready(function () {
+$(document).ready(function() {
     console.log("home.js loaded");
 
-    $(".navbar-brand").click(function (e) {
+    $(".navbar-brand").click(function(e) {
         e.preventDefault();
         $(window).scrollTo('.jumbotron', 600);
         console.log("navbar-brand selected");
     })
 
-    $(".nav-design").click(function (e) {
+    $(".nav-design").click(function(e) {
         e.preventDefault();
         $(window).scrollTo('.design', 600);
         console.log("navbar-design selected");
     })
 
-    $(".nav-media").click(function (e) {
+    $(".nav-media").click(function(e) {
         e.preventDefault();
         $(window).scrollTo('.media', 600);
         console.log("navbar-media selected");
     })
 
-    $(".nav-about").click(function (e) {
+    $(".nav-about").click(function(e) {
         e.preventDefault();
         $(window).scrollTo('.about', 600);
     })
 
-    $(".nav-contact").click(function (e) {
+    $(".nav-contact").click(function(e) {
         e.preventDefault();
         $(window).scrollTo('.contact', 600);
     })
 
-    $("#scrollDown").click(function (e) {
+    $("#scrollDown").click(function(e) {
         e.preventDefault();
         $(window).scrollTo('.design', 600);
         console.log("navbar-brand selected");
@@ -45,12 +45,12 @@ $(document).ready(function () {
         $('.bg-img').css('height', (jumboHeight - scrolled + 20) + 'px');
     }
 
-    $(window).scroll(function (e) {
+    $(window).scroll(function(e) {
         parallax();
     });
 
     //SCROLLING DOWN MENU POPUP
-    $(window).scroll(function () {
+    $(window).scroll(function() {
         if ($(this).scrollTop() > window.innerHeight - 40) {
             $('.active-nav').fadeIn(500);
         } else {
@@ -69,7 +69,7 @@ $(document).ready(function () {
 
     //OTHER SHIZ
     var resumeBtnState = false;
-    $(".resume-button").click(function (e) {
+    $(".resume-button").click(function(e) {
         if (resumeBtnState == false) {
             e.preventDefault();
             $('.resume-shell').fadeIn();
