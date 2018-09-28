@@ -58,6 +58,14 @@ a {
     margin-right: 3vw;
 }
 
+@media(min-width:2200px) {
+    .sectionDivider {
+        max-width: 2200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
 
 /* Highlight Portfolio Style*/
 
@@ -169,7 +177,7 @@ a {
 }
 
 .aboutContent {
-    width: 50vw;
+    width: 50%;
     margin: 0;
 }
 
@@ -183,7 +191,7 @@ a {
 
 .aboutImg {
     float: right;
-    width: 40vw;
+    width: 40%;
 }
 
 .aboutImg img {
@@ -207,11 +215,14 @@ a {
         width: 95%;
     }
     .aboutContent {
-        width: 80vw;
+        width: 80%;
     }
     .aboutImg {
-        width: 80vw;
+        width: 90%;
         float: left;
+    }
+    .aboutContent {
+        width: 100%;
     }
 }
 
@@ -221,6 +232,12 @@ a {
     }
     .jumbotron h1 {
         font-size: 2.5em;
+    }
+    .aboutContent p {
+        padding-right: 0;
+        padding-left: 0;
+        padding-top: 1em;
+        padding-bottom: 1em;
     }
 }
 
@@ -265,5 +282,15 @@ a {
     .resume-section {
         width: 80%;
         flex-basis: 80%;
+    }
+}
+
+@media(max-width:768px) {
+    .resume-section {
+        width: 100%;
+        flex-basis: 100%;
+    }
+    .resume-section ul {
+        padding-left: 5%;
     }
 }
