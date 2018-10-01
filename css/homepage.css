@@ -261,6 +261,7 @@ a {
 .resume-section li {
     margin-top: 1em;
     list-style-type: none;
+    width: 95%;
 }
 
 .resume-section p {
