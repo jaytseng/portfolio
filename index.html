@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/homepage.css">
     <!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
     <link rel="stylesheet" href="css/footer.css">
+    <link href="css/hamburger.css" rel="stylesheet">
     <link href="css/carousel.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600" rel="stylesheet">
 
@@ -29,52 +30,102 @@
 
 <body>
     <div class="homepage" id="wrapper">
+        <div id="sidebar-wrapper">
+            <button class="hamburger hamburger--spring" id="menuClose" type="button">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+            <div class="menu-content sidebar-nav" style="height: 100%">
 
+                <nav class="navbar navbar-default" style="margin-top: 70px; font-size: 2em; font-weight: 100;">
+                    <ul class="nav nav-stacked">
+                        <li>
+                            <a class="nav-home" href="#home">HOME</a>
+                        </li>
+                        <li>
+                            <a class="nav-portfolio" href="#design">PORTFOLIO</a>
+                        </li>
+                        <li>
+                            <a class="nav-mission" href="#media">MISSION</a>
+                        </li>
+                        <li>
+                            <a class="nav-about" href="#about">ABOUT</a>
+                        </li>
+                        <li>
+                            <a class="nav-CV" href="#about">CV &amp; RÉSUMÉ</a>
+                        </li>
+                        <li>
+                            <a class="nav-contact" href="#contact">CONTACT</a>
+                        </li>
+                    </ul>
+                </nav>
+                <p>&nbsp;</p>
+                <h2 style="position:absolute; bottom:15px; color: white; font-size: 1em; padding-left: 15%;">made in yvr with &#9829;. </h2>
+            </div>
+
+        </div>
     </div>
     <main class="row container-fluid">
-        <div id="home" style="background-color: lightgray">
+        <div id="home">
             <div class="jumbotron" style="height:100vh;">
-                <div style="padding-top: 40vh; padding-left: 3vw;">
-                    <h1>Hey there! Hi, I'm Jay.</h1>
-                    <h1>I empower people with design &amp; media. </h1>
-                    <h2 class="grow" id="scrollDown"><a href="#"><span class="glyphicon glyphicon-menu-down grow" style="color:black"></span></a> </h2>
+                <h3 style="margin-top:0; text-align: right; font-size: 2em; margin-right: 1em; padding-top: 0.35em; font-family: roboto, Helvetica, sans-serif; color: white;">JAY TSENG</h3>
+                <p style="margin-top:0; text-align: right; margin-right: 2em; letter-spacing: 0.2em;color: white;">design &amp; media</p>
+                <div style="padding-top: 30vh; padding-left: 3vw;">
+                    <h1 style="color: white;">Hey there! Hi, I'm Jay.</h1>
+                    <h1 style="color: white;">I empower people with design &amp; media. </h1>
+                    <h2 class="grow" id="scrollDown">
+                        <a href="#">
+                            <span class="glyphicon glyphicon-menu-down grow" style="color:white"></span>
+                        </a>
+                    </h2>
                 </div>
-                <p style="bottom:5px; position: absolute; padding-left: 3vw;">Jay is looking for a home in a company empowering people in the role of strategy, design, &amp; media starting Fall or Spring 2018.</p>
+                <p style="bottom:5px; position: absolute; padding-left: 3vw; color:white;">Jay is looking for a home in a company empowering people in the role of strategy, design, &amp; media starting
+                    Fall or Spring 2018.</p>
             </div>
         </div>
 
-        <div class="sectionDivider">
+        <div class="sectionDivider" id="portfolio">
             <h3>//portfolio: Things I've been up to lately.</h3>
 
             <div class="hpContainer">
                 <div class="hpItem">
                     <a href="#">
-                        <h2>Strategized &amp; built a makerspace to enhance interdisciplinary experiential learning &amp; student, community, industry engagement.</h2>
-                        <h5><strong>September 2017 to June 2018 </strong> Built for Simon Fraser University </h5>
+                        <h2>Strategized &amp; built a makerspace to enhance interdisciplinary experiential learning &amp; student,
+                            community, industry engagement.</h2>
+                        <h5>
+                            <strong>September 2017 to June 2018 </strong> Built for Simon Fraser University </h5>
                     </a>
                 </div>
                 <div class="hpItem">
                     <a href="#">
-                        <h2>Shot a documentary sharing the story of the urban Haida experience through the eyes of artist and carver, Corey Bulpitt.</h2>
-                        <h5><strong>October 2017 to March 2018 </strong> Shot &amp; edited for Museum of Vancouver </h5>
+                        <h2>Shot a documentary sharing the story of the urban Haida experience through the eyes of artist and
+                            carver, Corey Bulpitt.</h2>
+                        <h5>
+                            <strong>October 2017 to March 2018 </strong> Shot &amp; edited for Museum of Vancouver </h5>
                     </a>
                 </div>
                 <div class="hpItem">
                     <a href="#">
                         <h2>Created &amp; installed a entrance experience to welcome users into a makerspace. </h2>
-                        <h5><strong>September to December 2017 </strong> Designed &amp; fabricated for _space Makerspace @ SFU </h5>
+                        <h5>
+                            <strong>September to December 2017 </strong> Designed &amp; fabricated for _space Makerspace @ SFU </h5>
                     </a>
                 </div>
                 <div class="hpItem">
                     <a href="#">
-                        <h2>Optimized the workflow process to improve work between business, design, and development teams and increase work efficiency.</h2>
-                        <h5><strong>June to November 2017 </strong> Designed for Venture Connection Startup Buggie Delivery</h5>
+                        <h2>Optimized the workflow process to improve work between business, design, and development teams and
+                            increase work efficiency.</h2>
+                        <h5>
+                            <strong>June to November 2017 </strong> Designed for Venture Connection Startup Buggie Delivery</h5>
                     </a>
                 </div>
                 <div class="hpItem">
                     <a href="#">
-                        <h2>Designed and prototyped an IOT smart fan product to efficiently cool spaces using only natural air and the power of microcontrollers.</h2>
-                        <h5><strong>October 2015 to September 2016 </strong> Founded and designed at startup Kuelii Smart Design</h5>
+                        <h2>Designed and prototyped an IOT smart fan product to efficiently cool spaces using only natural air
+                            and the power of microcontrollers.</h2>
+                        <h5>
+                            <strong>October 2015 to September 2016 </strong> Founded and designed at startup Kuelii Smart Design</h5>
                     </a>
                 </div>
             </div>
@@ -88,9 +139,11 @@
                     <a href="#">
                         <img src="img/design_spatial_(0).jpg" alt="Music in the Streets Render">
                         <div class="opLabel">
-                            <h5><strong>Spring 2015</strong>, City of Surrey</h5>
+                            <h5>
+                                <strong>Spring 2015</strong>, City of Surrey</h5>
                             <h2>Pop-up Public Park Experience</h2>
-                            <p>Design in city of Surrey competition as pop-up installation at Central City Skytain Station for Summer of 2015.</p>
+                            <p>Design in city of Surrey competition as pop-up installation at Central City Skytain Station for
+                                Summer of 2015.</p>
                         </div>
                     </a>
                 </div>
@@ -98,7 +151,8 @@
                     <a href="#">
                         <img src="img/design_mindfulMind1.png" alt="Mindful Mind Product Shot">
                         <div class="opLabel">
-                            <h5><strong>Spring 2016</strong>, IAT 320 Body Interfaces</h5>
+                            <h5>
+                                <strong>Spring 2016</strong>, IAT 320 Body Interfaces</h5>
                             <h2>Mindful Wearable Watch</h2>
                             <p>Tzzzz</p>
                         </div>
@@ -108,7 +162,8 @@
                     <a href="#">
                         <img src="img/design_spatial_(0).jpg" alt="Music in the Streets Render">
                         <div class="opLabel">
-                            <h5><strong>Jul.- Aug., 2017</strong>, NCIX PC</h5>
+                            <h5>
+                                <strong>Jul.- Aug., 2017</strong>, NCIX PC</h5>
                             <h2>Custom PC Product Promo Videos</h2>
                             <p>Tzzzz</p>
                         </div>
@@ -118,7 +173,8 @@
                     <a href="#">
                         <img src="img/media_bear_in_mind.jpg" alt="Music in the Streets Render">
                         <div class="opLabel">
-                            <h5><strong>Summer 2017 </strong>, Pacific Institute for Climate Solutions</h5>
+                            <h5>
+                                <strong>Summer 2017 </strong>, Pacific Institute for Climate Solutions</h5>
                             <h2>Comedic PSA series for Climate Change</h2>
                             <p>Tzzzz</p>
                         </div>
@@ -127,15 +183,17 @@
 
             </div>
         </div>
-        <div class="sectionDivider">
+        <div class="sectionDivider" id="mission">
             <h3>//about: Why I do it?</h3>
             <div class="aboutHeadline">
                 <h1>I work to empower people to be more creative, live better, &amp; share their stories &amp; perspectives.</h1>
             </div>
             <div class="aboutBody">
                 <div class="aboutContent">
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis
-                        nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu </p>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                        laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                        ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure
+                        dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu </p>
                 </div>
                 <div class="aboutImg">
                     <img src="img/media_bear_in_mind.jpg" alt="Music in the Streets Render">
@@ -144,27 +202,34 @@
 
 
         </div>
-        <div class="sectionDivider">
+        <div class="sectionDivider" id="about">
             <h3>//about: Who I am &amp; what I've done.</h3>
             <div class="aboutHeadline">
-                <h1>Born in Taiwan, Grown in Canada.</h1>
-                <h1>Interdisciplinarity, multi-medium, across perspectives.</h1>
+                <h1>Made in Taiwan, Programmed in Canada.</h1>
+                <h1>Cross disciplines, mediums, &amp; perspectives.</h1>
             </div>
             <div class="aboutBody">
                 <div class="aboutImg">
                     <img src="img/media_bear_in_mind.jpg" alt="Music in the Streets Render">
                 </div>
                 <div class="aboutContent">
-                    <p>Born in Taiwan and initially studying mechatronics system engineering, I am an amalgamation of multiple disciplines and cultures. Now as Canadian BSc graduate of design &amp; media at School of Interactive Arts &amp; Technology, I
-                        strive to integrate user centric design elements into my technical projects, while bringing the technical knowledge into my design projects. I enjoy being challenged with wicked problems and my passion is enabling human and technological
-                        interactions through design as well as empowering people through storytelling and audio-visual experiences.</p>
+                    <p>Born in Taiwan and initially studying mechatronics system engineering, I am an amalgamation of multiple
+                        disciplines and cultures. Now as Canadian BSc graduate of design &amp; media at School of Interactive
+                        Arts &amp; Technology, I strive to integrate user centric design elements into my technical projects,
+                        while bringing the technical knowledge into my design projects. I enjoy being challenged with wicked
+                        problems and my passion is enabling human and technological interactions through design as well as
+                        empowering people through storytelling and audio-visual experiences.</p>
                 </div>
 
 
             </div>
-
+        </div>
+        <div class="sectionDivider" id="cv">
             <div style="margin-top: 4em;">
-                <h1>Curriculum Vitæ</h1>
+                <div class="aboutHeadline">
+                    <h1>Curriculum Vitæ</h1>
+                </div>
+
                 <div class="resume-shell">
                     <a href="/files/Tseng_Jay_Resume_2018_July.pdf" target="_blank" style="font-size: 1.2em;">Download Resume As PDF</a>
                     <div class="resume">
@@ -172,52 +237,71 @@
                             <h3>CURRENT &amp; PAST EMPLOYMENT</h3>
                             <ul>
                                 <li>
-                                    <p><strong>Studio Lab Instructor</strong> Simon Fraser University</p>
+                                    <p>
+                                        <strong>Studio Lab Instructor</strong> Simon Fraser University</p>
                                     <p class="date">2016 (Spring, Fall), 2017 (Spring, Fall), 2018 (Spring, Fall)</p>
                                     <p>Prepared &amp; lead up to three labs of 24 students in IAT 202: New Media.</p>
                                     <p>Designed &amp; implemented a webpage to host final projects.</p>
-                                    <p><a href="https://www.iat202.com" target="_blank">Visit IAT 202 Projects Archive</a></p>
+                                    <p>
+                                        <a href="https://www.iat202.com" target="_blank">Visit IAT 202 Projects Archive</a>
+                                    </p>
                                 </li>
                                 <li>
-                                    <p><strong>Creative Design &amp; Video</strong> Freelance</p>
+                                    <p>
+                                        <strong>Creative Design &amp; Video</strong> Freelance</p>
                                     <p class="date">Dec. 2014 - Ongoing</p>
                                     <p>Consultation, marketing, strategy, video production, web design &amp; dev.</p>
                                     <p>Clients incl. REMAX, Simon Fraser Univ., NCIX, Freedom Boat Club, &amp; more.</p>
-                                    <p><a class="nav-media" href="#media">Visit Portfolio Projects</a></p>
+                                    <p>
+                                        <a class="nav-media" href="#media">Visit Portfolio Projects</a>
+                                    </p>
                                 </li>
                                 <li>
-                                    <p><strong>Wedding &amp; Event Video Production</strong> Contractor</p>
+                                    <p>
+                                        <strong>Wedding &amp; Event Video Production</strong> Contractor</p>
                                     <p class="date">Dec. 2012 - Ongoing</p>
                                     <p>Glidecam &amp; camera operation, video team lead, editing</p>
                                     <p>Companies include, JC Images, Lion Frame Studio, Studio 1</p>
-                                    <p><a href="https://vimeo.com/jcimages" target="_blank">Wedding Projects from JC Images</a></p>
+                                    <p>
+                                        <a href="https://vimeo.com/jcimages" target="_blank">Wedding Projects from JC Images</a>
+                                    </p>
                                 </li>
                                 <li>
-                                    <p><strong>Project &amp; Strategy Team Lead</strong> _space: A Makerspace at SFU Surrey</p>
+                                    <p>
+                                        <strong>Project &amp; Strategy Team Lead</strong> _space: A Makerspace at SFU Surrey</p>
                                     <p class="date">Sept. 2017 - June 2018</p>
                                     <p>Lead the strategy and physical creation of a 1350 sqft. space at SFU.</p>
-                                    <p><a href="design_space_sfu.html" target="_blank">Visit Portfolio Page</a></p>
+                                    <p>
+                                        <a href="design_space_sfu.html" target="_blank">Visit Portfolio Page</a>
+                                    </p>
                                 </li>
                                 <li>
-                                    <p><strong>Chief Strategy Officer, Senior Designer</strong> Buggie Delivery (SFU Startup)</p>
+                                    <p>
+                                        <strong>Chief Strategy Officer, Senior Designer</strong> Buggie Delivery (SFU Startup)</p>
                                     <p class="date">Mar. 2016 - Nov. 2017</p>
                                     <p>Chief Strategy &amp; Design Officer</p>
                                     <p>UX/UI designer &amp; business strategy development.</p>
                                     <p>Creating an on call product delivery service &amp; optimizing workflow.</p>
                                 </li>
                                 <li>
-                                    <p><strong>Founder, CEO, Product Designer</strong> Kuelii Smart Design (Startup)</p>
+                                    <p>
+                                        <strong>Founder, CEO, Product Designer</strong> Kuelii Smart Design (Startup)</p>
                                     <p class="date">Oct. 2015 - Apr. 2017</p>
                                     <p>Founder, CEO, Lead Product Development &amp; UX Design</p>
                                     <p>Designed intelligent IOT fan solution for space cooling.</p>
-                                    <p><a href="https://blog.kuelii.com/" target="_blank">Visit Project Blog</a></p>
+                                    <p>
+                                        <a href="https://blog.kuelii.com/" target="_blank">Visit Project Blog</a>
+                                    </p>
                                 </li>
                                 <li>
-                                    <p><strong>Cinematographer / Camera Operator</strong> Grand Bear Media</p>
+                                    <p>
+                                        <strong>Cinematographer / Camera Operator</strong> Grand Bear Media</p>
                                     <p class="date">Dec. 2014 - Oct. 2016</p>
                                     <p>Produced with Grand Bear Media for Tianjin Television &amp; Youtube.</p>
                                     <p>Showing off the sights of BC, funded by Destination BC.</p>
-                                    <p><a href="media_grand_bear_media.html" target="_blank">Visit Portfolio Page</a></p>
+                                    <p>
+                                        <a href="media_grand_bear_media.html" target="_blank">Visit Portfolio Page</a>
+                                    </p>
                                 </li>
                             </ul>
                         </div>
@@ -225,69 +309,91 @@
                             <h3>EDUCATION &amp; CERTIFICATION</h3>
                             <ul>
                                 <li>
-                                    <p><strong>Bachelor of Science</strong> Simon Fraser University</p>
+                                    <p>
+                                        <strong>Bachelor of Science</strong> Simon Fraser University</p>
                                     <p class="date">2012 - 2018</p>
                                     <p>Major in design &amp; media at School of Interactive Arts &amp; Technology</p>
                                 </li>
                                 <li>
-                                    <p><strong> International Baccalaureate Diploma</strong> Port Moody Secondary</p>
+                                    <p>
+                                        <strong> International Baccalaureate Diploma</strong> Port Moody Secondary</p>
                                     <p class="date">2008 - 2012</p>
                                 </li>
                             </ul>
                             <h3>AWARDS, NOMINATIONS, &amp; PLACEMENTS</h3>
                             <ul>
                                 <li>
-                                    <p><strong>Society for Visual Anthropology Film Festival</strong> Nomination</p>
+                                    <p>
+                                        <strong>Society for Visual Anthropology Film Festival</strong> Nomination</p>
                                     <p class="date">Festival in Nov. 2018</p>
                                     <p>Haida Now: Corey Bulpitt, nominated in Short Films Category</p>
                                 </li>
                                 <li>
-                                    <p><strong>Startup Weekend: UW</strong> 2nd Place</p>
+                                    <p>
+                                        <strong>Startup Weekend: UW</strong> 2nd Place</p>
                                     <p class="date">January, 2016</p>
                                     <p>Built &amp; pitched Kuelii Smart Fan.</p>
                                 </li>
                                 <li>
-                                    <p><strong>Surrey PARKit Design Challenge</strong> 2nd Runner-Up</p>
+                                    <p>
+                                        <strong>Surrey PARKit Design Challenge</strong> 2nd Runner-Up</p>
                                     <p class="date">June 2015</p>
                                     <p>Designed urban square experience integrating two pianos.</p>
-                                    <p><a href="design_surrey_parkit.html">View Portfolio Page</a></p>
+                                    <p>
+                                        <a href="design_surrey_parkit.html">View Portfolio Page</a>
+                                    </p>
                                 </li>
                                 <li>
-                                    <p><strong>Western Engineering Competition</strong> 1st Place @SFU</p>
+                                    <p>
+                                        <strong>Western Engineering Competition</strong> 1st Place @SFU</p>
                                     <p class="date">Spring 2014</p>
                                     <p>Won at SFU &amp; Represented SFU @ WEC 2014 in Edmonton, AB.</p>
                                     <p>Designed mechanical fruit catcher &amp; flood prevention system.</p>
                                 </li>
                                 <li>
-                                    <p><strong>Odyssey of the Mind</strong> World Finals &amp; Provincials</p>
+                                    <p>
+                                        <strong>Odyssey of the Mind</strong> World Finals &amp; Provincials</p>
                                     <p class="date">4th Place @ World Finals, 2011</p>
                                     <p class="date">1st Place @ Provincials, 2008-2012</p>
-                                    <p>Creative problem solving, structure design, & spontaneous creativity.</p>
+                                    <p>Creative problem solving, structure design, &amp; spontaneous creativity.</p>
                                 </li>
                             </ul>
                             <h3>VOLUNTEER &amp; PASSION PROJECTS</h3>
                             <ul>
                                 <li>
-                                    <p><strong>Ceremony Director</strong> Creative Problem Solving Society</p>
+                                    <p>
+                                        <strong>Ceremony Director</strong> Creative Problem Solving Society</p>
                                     <p class="date">Jun. 2013 - Ongoing</p>
                                     <p>Director of ceremonies, event coordinator.</p>
                                     <p>Prepare live media productions &amp; events.</p>
-                                    <p><a href="https://www.youtube.com/watch?v=HDnd1ShEzkA">View 2015 Closing Ceremonies Video</a></p>
+                                    <p>
+                                        <a href="https://www.youtube.com/watch?v=HDnd1ShEzkA">View 2015 Closing Ceremonies Video</a>
+                                    </p>
                                 </li>
                                 <li>
-                                    <p><strong>Board of Directors</strong> Creative Problem Solving Society</p>
+                                    <p>
+                                        <strong>Dance Videos &amp; Shows</strong> Various Companies &amp; Choreographers</p>
+                                    <p class="date">Ongoing</p>
+                                    <p>Creating the vision of </p>
+                                    <p>Represent the program's youth on the board of directors.</p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <strong>Board of Directors</strong> Creative Problem Solving Society</p>
                                     <p class="date">Jun. 2011 - June 2013</p>
                                     <p>Board of director, director of ceremonies, event coordinator.</p>
                                     <p>Represent the program's youth on the board of directors.</p>
                                 </li>
                                 <li>
-                                    <p><strong>Club President &amp; Team Captain</strong> Odyssey of the Mind</p>
+                                    <p>
+                                        <strong>Club President &amp; Team Captain</strong> Odyssey of the Mind</p>
                                     <p class="date">Oct. 2008 - Jun. 2012</p>
                                     <p>Club president, team captain, &amp; team participant.</p>
                                     <p>Represented Canada at 2009, 2010, 2011 World Finals.</p>
                                 </li>
                                 <li>
-                                    <p><strong>Youth Commissioner</strong> Scouts Canada</p>
+                                    <p>
+                                        <strong>Youth Commissioner</strong> Scouts Canada</p>
                                     <p class="date">Sept. 2009 - Mar. 2012</p>
                                     <p>Youth commissioner of 18th Coquitlam, venture company president.</p>
                                     <p>Coordinated youth activities, represented group at district.</p>
@@ -298,30 +404,44 @@
                             <h3>SKILLS: SOFTWARE</h3>
                             <ul>
                                 <li>
-                                    <p><strong>Adobe CC</strong></p>
-                                    <p>Premiere Pro, After Effects, Illustrator, InDesign, Lightroom, Audition, Experience Design, Photoshop</p>
+                                    <p>
+                                        <strong>Adobe CC</strong>
+                                    </p>
+                                    <p>Premiere Pro, After Effects, Illustrator, InDesign, Lightroom, Audition, Experience Design,
+                                        Photoshop
+                                    </p>
                                 </li>
                                 <li>
-                                    <p><strong>Prototyping</strong></p>
+                                    <p>
+                                        <strong>Prototyping</strong>
+                                    </p>
                                     <p>3D Modelling: Sketchup + VRay, Solidworks, Maya, Rhino + Grasshopper</p>
                                     <p>Digital Prototyping: Adobe XD, AxureRP, Sketch</p>
                                 </li>
                                 <li>
-                                    <p><strong>Office Tools</strong></p>
+                                    <p>
+                                        <strong>Office Tools</strong>
+                                    </p>
                                     <p>Microsoft Office Suite: Word, Excel, Power Point</p>
                                     <p>Google G Suite: Docs, Sheets, Slides, Forms</p>
                                     <p>Apple iWork: Pages, Keynote</p>
                                 </li>
                                 <li>
-                                    <p><strong>CMS / Web Hosting &amp; Publishing</strong></p>
+                                    <p>
+                                        <strong>CMS / Web Hosting &amp; Publishing</strong>
+                                    </p>
                                     <p>Wordpress, Adobe AEM, Squarespace, Medium</p>
                                 </li>
                                 <li>
-                                    <p><strong>Task Tracking</strong></p>
+                                    <p>
+                                        <strong>Task Tracking</strong>
+                                    </p>
                                     <p>Asana, Trello, Moxtra, Jira</p>
                                 </li>
                                 <li>
-                                    <p><strong>Other</strong></p>
+                                    <p>
+                                        <strong>Other</strong>
+                                    </p>
                                     <p>Matlab</p>
                                 </li>
                             </ul>
@@ -329,11 +449,16 @@
                             <h3>SKILLS: HANDS ON</h3>
                             <ul>
                                 <li>
-                                    <p><strong>Fabrication</strong></p>
-                                    <p>Wood &amp; Plastics shop tools, Technical Design &amp; Drawing, 3D Prototyping &amp; Printing, Circuit Prototyping &amp; Testing, PCB Assembly, CNC Routing</p>
+                                    <p>
+                                        <strong>Fabrication</strong>
+                                    </p>
+                                    <p>Wood &amp; Plastics shop tools, Technical Design &amp; Drawing, 3D Prototyping &amp;
+                                        Printing, Circuit Prototyping &amp; Testing, PCB Assembly, CNC Routing</p>
                                 </li>
                                 <li>
-                                    <p><strong>Microcontroller &amp; Embedded Platforms</strong></p>
+                                    <p>
+                                        <strong>Microcontroller &amp; Embedded Platforms</strong>
+                                    </p>
                                     <p>Arduino, Raspberry Pi, BeagleBoard</p>
                                 </li>
                             </ul>
@@ -341,59 +466,92 @@
                             <h3>SKILLS: LANGUAGES</h3>
                             <ul>
                                 <li>
-                                    <p><strong>Spoken</strong></p>
+                                    <p>
+                                        <strong>Spoken</strong>
+                                    </p>
                                     <p>English, Mandarin Chinese</p>
                                 </li>
                                 <li>
-                                    <p><strong>Programming</strong></p>
+                                    <p>
+                                        <strong>Programming</strong>
+                                    </p>
                                     <p>C/C++, Java, Python, HTML + CSS3 + JS</p>
                                 </li>
                             </ul>
+
+                            <h3>STRENGTHS &amp; INTERESTS</h3>
+                            <ul>
+                                <li>
+                                    <p>emphasize experience in all design &amp; media element</p>
+                                    <p>great interest in Internet of Things and electronics</p>
+                                    <p>avid reader of technology blogs and news</p>
+                                    <p>creative, critical, &amp; passionate about tech &amp; design</p>
+                                    <p> &nbsp;</p>
+                                    <p>confident in public s peaking &amp; communication</p>
+                                    <p>experienced in teamwork, management, &amp; organization</p>
+                                    <p>independent, cooperative, responsible, &amp; trustworthy</p>
+                                </li>
+                            </ul>
+
+
 
                         </div>
                         <div class="resume-section">
                             <h3>DESIGN &amp; STRATEGY</h3>
                             <ul>
                                 <li>
-                                    <p><strong>_space Makerspace</strong> Business Strategy, UX Design</p>
-                                    <p class="date">June 2015</p>
-                                    <p>Achieved 2nd runner up result.</p>
-                                    <p>Designed urban square experience integrating two pianos.</p>
-                                    <p><a href="design_surrey_parkit.html">View Portfolio Page</a></p>
+                                    <p>
+                                        <strong>_space Makerspace</strong> Business Strategy, UX Design</p>
+                                    <p class="date">Oct. 2017 - Jun. 2018</p>
+                                    <p>Tzzzz</p>
+                                    <p>Tzzzz</p>
+                                    <p>
+                                        <a href="#">View Portfolio Page</a>
+                                    </p>
                                 </li>
                                 <li>
-                                    <p><strong>Buggie Delivery</strong> Internal Workflow</p>
-                                    <p class="date">June 2015</p>
-                                    <p>Achieved 2nd runner up result.</p>
-                                    <p>Designed urban square experience integrating two pianos.</p>
-                                    <p><a href="design_surrey_parkit.html">View Portfolio Page</a></p>
-                                </li>
-
-                                <li>
-                                    <p><strong>Buggie Delivery</strong> Business Strategy, UX Design</p>
-                                    <p class="date">June 2015</p>
-                                    <p>Achieved 2nd runner up result.</p>
-                                    <p>Designed urban square experience integrating two pianos.</p>
-                                    <p><a href="design_surrey_parkit.html">View Portfolio Page</a></p>
-                                </li>
-                                <li>
-                                    <p><strong>Kuelii Smart Design</strong> Business Strategy, UX Design</p>
-                                    <p class="date">June 2015</p>
-                                    <p>Achieved 2nd runner up result.</p>
-                                    <p>Designed urban square experience integrating two pianos.</p>
-                                    <p><a href="design_surrey_parkit.html">View Portfolio Page</a></p>
+                                    <p>
+                                        <strong>Buggie Delivery</strong> Internal Workflow</p>
+                                    <p class="date">August 2017</p>
+                                    <p>Tzzzz</p>
+                                    <p>Tzzzz</p>
                                 </li>
 
                                 <li>
-                                    <p><strong>Surrey PARKit Design Challenge</strong> UX Design</p>
-                                    <p class="date">June 2015</p>
-                                    <p>Achieved 2nd runner up result.</p>
-                                    <p>Designed urban square experience integrating two pianos.</p>
-                                    <p><a href="design_surrey_parkit.html">View Portfolio Page</a></p>
+                                    <p>
+                                        <strong>Buggie Delivery</strong> Business Strategy, UX Design</p>
+                                    <p class="date">Mar. 2016 - Nov. 2017</p>
+                                    <p>Tzzzz</p>
+                                    <p>Tzzzz</p>
+                                    <p>
+                                        <a href="design_surrey_parkit.html">View Portfolio Page</a>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <strong>Kuelii Smart Design</strong> Business Strategy, UX Design</p>
+                                    <p class="date">Oct. 2015 - Apr. 2017</p>
+                                    <p>Tzzzz</p>
+                                    <p>Tzzzz</p>
+                                    <p>
+                                        <a href="design_surrey_parkit.html">View Portfolio Page</a>
+                                    </p>
                                 </li>
 
                                 <li>
-                                    <p><strong>IAT 233: Spatial Design</strong> Spatial Design</p>
+                                    <p>
+                                        <strong>Surrey PARKit Design Challenge</strong> UX Design</p>
+                                    <p class="date">June 2015</p>
+                                    <p>Achieved 2nd runner up result.</p>
+                                    <p>Designed urban square experience integrating two pianos.</p>
+                                    <p>
+                                        <a href="design_surrey_parkit.html">View Portfolio Page</a>
+                                    </p>
+                                </li>
+
+                                <li>
+                                    <p>
+                                        <strong>IAT 233: Spatial Design</strong> Spatial Design</p>
                                     <p class="date">Fall Semester 2014</p>
                                     <p>Lead in physical &amp; digital modeling, interior lighting.</p>
                                     <p>Designed multi-program building for tourism, residential, and community.</p>
@@ -402,37 +560,53 @@
                             <h3>TECHNICAL &amp; FABRICATION</h3>
                             <ul>
                                 <li>
-                                    <p><strong>IAT 481: Business of Design</strong></p>
+                                    <p>
+                                        <strong>IAT 481: Business of Design</strong>
+                                    </p>
                                     <p class="date">Fall Semester 2017</p>
                                     <p>Electrical design, technical design, &amp; manufacturing.</p>
                                     <p>Entrance information experience via digital &amp; physical solution.</p>
-                                    <p><a href="#">Visit Portfolio Page</a></p>
+                                    <p>
+                                        <a href="#">Visit Portfolio Page</a>
+                                    </p>
                                 </li>
                                 <li>
-                                    <p><strong>Kuelii Smart Fan</strong></p>
+                                    <p>
+                                        <strong>Kuelii Smart Fan</strong>
+                                    </p>
                                     <p class="date">Oct. 2015 - Apr. 2017</p>
                                     <p>Prototype &amp; design product hardware &amp; user interface.</p>
                                     <p>Designed intelligent IOT fan solution for space cooling.</p>
-                                    <p><a href="https://blog.kuelii.com/" target="_blank">Visit Project Blog</a></p>
+                                    <p>
+                                        <a href="https://blog.kuelii.com/" target="_blank">Visit Project Blog</a>
+                                    </p>
                                 </li>
                                 <li>
-                                    <p><strong>IAT 320: Body Interface</strong></p>
+                                    <p>
+                                        <strong>IAT 320: Body Interface</strong>
+                                    </p>
+                                    <p class="date">Spring Semester 2016</p>
+                                    <p>Tzzzz</p>
+                                    <p>Tzzzz</p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <strong>IAT 336: Materials in Design</strong>
+                                    </p>
                                     <p class="date">Spring Semester 2016</p>
                                     <p>Team lead in electrical &amp; technical design, assembly.</p>
                                     <p>Designed &amp; assembled lamp of glass, paper, &amp; metal.</p>
                                 </li>
                                 <li>
-                                    <p><strong>IAT 336: Materials in Design</strong></p>
-                                    <p class="date">Spring Semester 2016</p>
-                                    <p>Team lead in electrical &amp; technical design, assembly.</p>
-                                    <p>Designed &amp; assembled lamp of glass, paper, &amp; metal.</p>
-                                </li>
-                                <li>
-                                    <p><strong>SFU Team Guardian</strong></p>
+                                    <p>
+                                        <strong>SFU Team Guardian</strong>
+                                    </p>
                                     <p class="date">Sept. 2013 - Aug. 2015</p>
                                     <p>Designed camera gimbal and associated control systems.</p>
                                     <p>Selected camera for onboard vision systems.</p>
-                                    <p><a href="http://www.sfu.ca/uav/">Visit Team Site</a></p>
+                                    <p>
+                                        <a href="http://www.sfu.ca/uav/">Visit Team Site</a>
+                                    </p>
                                 </li>
 
                             </ul>
@@ -442,35 +616,42 @@
                             <h3>BRANDING, PHYSICAL &amp; DIGITAL MARKETING</h3>
                             <ul>
                                 <li>
-                                    <p><strong>_space Makerspace</strong> Branding, Print, &amp; Launch Events</p>
+                                    <p>
+                                        <strong>_space Makerspace</strong> Branding, Print, &amp; Launch Events</p>
                                     <p class="date">Nov. 2017 - June 2018</p>
                                     <p>Designed branding, pitch &amp; marketing materials for project.</p>
                                     <p>Planned and hosted multiple stakeholder and public events to launch.</p>
                                 </li>
                                 <li>
-                                    <p><strong>Steam Productions</strong> Exhibition Booth Design</p>
+                                    <p>
+                                        <strong>Steam Productions</strong> Exhibition Booth Design</p>
                                     <p class="date">Summer 2017</p>
                                     <p>Lead the design &amp; fabrication for Mini MakerFaire Vancouver 2017</p>
                                 </li>
                                 <li>
-                                    <p><strong>Buggie Delivery</strong> Company Re-Branding</p>
+                                    <p>
+                                        <strong>Buggie Delivery</strong> Company Re-Branding</p>
                                     <p class="date">Mar. - Jun. 2016</p>
                                     <p>Analyzed &amp; consulted to understand company &amp; product.</p>
                                     <p>Aligned company brand and message with product &amp; vision.</p>
                                 </li>
                                 <li>
-                                    <p><strong>Kuelii Smart Design</strong> Marketing, Print, &amp; Branding</p>
+                                    <p>
+                                        <strong>Kuelii Smart Design</strong> Marketing, Print, &amp; Branding</p>
                                     <p class="date">Oct. 2015 - Apr. 2017</p>
                                     <p>Tzzzzz.</p>
                                     <p>Tzzzzz</p>
                                 </li>
                                 <li>
-                                    <p><strong>Picture Prose</strong> Branding &amp; Event Booth Design</p>
+                                    <p>
+                                        <strong>Picture Prose</strong> Branding &amp; Event Booth Design</p>
                                     <p class="date">Dec. 2014 - Jan. 2015</p>
-                                    <p>Designed presentation booth, print, digital, and web materials, for wedding convention, 2015 season.</p>
+                                    <p>Designed presentation booth, print, digital, and web materials, for wedding convention,
+                                        2015 season.</p>
                                 </li>
                                 <li>
-                                    <p><strong>SFU Team Guardian</strong> Team Re-Branding</p>
+                                    <p>
+                                        <strong>SFU Team Guardian</strong> Team Re-Branding</p>
                                     <p class="date">Fall 2014</p>
                                     <p>Tzzzzz.</p>
                                     <p>Tzzzzz</p>
@@ -479,54 +660,72 @@
                             <h3>WEBSITE &amp; APPS</h3>
                             <ul>
                                 <li>
-                                    <p><strong>SFU.ca/BusinessOfDesign</strong> Web &amp; Content Redesign</p>
+                                    <p>
+                                        <strong>SFU.ca/BusinessOfDesign</strong> Web &amp; Content Redesign</p>
                                     <p class="date">October 2017</p>
                                     <p>Re-organized information architecture &amp; updated copy.</p>
                                     <p>Implemented using Adobe AEM content management software</p>
-                                    <p><a href="http://www.sfu.ca/businessofdesign.html">Visit SFU BoD Website</a></p>
+                                    <p>
+                                        <a href="http://www.sfu.ca/businessofdesign.html">Visit SFU BoD Website</a>
+                                    </p>
                                 </li>
                                 <li>
-                                    <p><strong>IAT202.com</strong> Web UX &amp; Development</p>
+                                    <p>
+                                        <strong>IAT202.com</strong> Web UX &amp; Development</p>
                                     <p class="date">June 2015</p>
                                     <p>Achieved 2nd runner up result.</p>
                                     <p>Designed urban square experience integrating two pianos.</p>
-                                    <p><a href="https://www.iat202.com/">Visit IAT202.com</a></p>
+                                    <p>
+                                        <a href="https://www.iat202.com/">Visit IAT202.com</a>
+                                    </p>
                                 </li>
                                 <li>
-                                    <p><strong>StreamProductions.org</strong> Web Design &amp; Development</p>
+                                    <p>
+                                        <strong>StreamProductions.org</strong> Web Design &amp; Development</p>
                                     <p class="date">June 2017</p>
                                     <p>Achieved 2nd runner up result.</p>
                                     <p>Designed urban square experience integrating two pianos.</p>
-                                    <p><a href="http://www.streamproductions.org/">Visit StreamProductions.org</a></p>
+                                    <p>
+                                        <a href="http://www.streamproductions.org/">Visit StreamProductions.org</a>
+                                    </p>
                                 </li>
                                 <li>
-                                    <p><strong>RumpTweets.com</strong> Web App UX, Asset Creation</p>
+                                    <p>
+                                        <strong>RumpTweets.com</strong> Web App UX, Asset Creation</p>
                                     <p class="date">January 2017</p>
                                     <p>Achieved 2nd runner up result.</p>
                                     <p>Designed urban square experience integrating two pianos.</p>
-                                    <p><a href="https://rumptweets.com/">Visit RumpTweets.com</a></p>
+                                    <p>
+                                        <a href="https://rumptweets.com/">Visit RumpTweets.com</a>
+                                    </p>
                                 </li>
                                 <li>
-                                    <p><strong>myBuggie.ca</strong> Website &amp; App UX</p>
+                                    <p>
+                                        <strong>myBuggie.ca</strong> Website &amp; App UX</p>
                                     <p class="date">June 2015</p>
                                     <p>Achieved 2nd runner up result.</p>
                                     <p>Designed urban square experience integrating two pianos.</p>
-                                    <p><a href="https://mybuggie.ca/">Visit myBuggie.ca</a></p>
+                                    <p>
+                                        <a href="https://mybuggie.ca/">Visit myBuggie.ca</a>
+                                    </p>
                                 </li>
                                 <li>
-                                    <p><strong>IAT 352: Android Development</strong> App UX &amp; Development</p>
+                                    <p>
+                                        <strong>IAT 352: Android Development</strong> App UX &amp; Development</p>
                                     <p class="date">Spring Semester 2016</p>
                                     <p>Designed a multifunction interface for izakaya restaurant.</p>
                                     <p>Quick ordering of food &amp; interaction with serving staff.</p>
                                 </li>
                                 <li>
-                                    <p><strong>IAT 334: Interface Design</strong> App UX</p>
+                                    <p>
+                                        <strong>IAT 334: Interface Design</strong> App UX</p>
                                     <p class="date">Spring Semester 2016</p>
                                     <p>Designed a multifunction interface for izakaya restaurant.</p>
                                     <p>Quick ordering of food &amp; interaction with serving staff.</p>
                                 </li>
                                 <li>
-                                    <p><strong>IAT 235: Information Architecture &amp; Web</strong> Website Redesign</p>
+                                    <p>
+                                        <strong>IAT 235: Information Architecture &amp; Web</strong> Website Redesign</p>
                                     <p class="date">Spring Semester 2015</p>
                                     <p>Experience designer, coding responsive designs.</p>
                                     <p>Studied &amp; redesigned City of Burnaby website focusing on usability.</p>
@@ -535,73 +734,97 @@
                         </div>
 
                         <div class="resume-section">
-                            <h3>CINEMATOGRAPHY, MEDIA, &amp; EVENTS</h3>
+                            <h3>CINEMATOGRAPHY, MEDIA, &amp; LIVE PRODUCTIONS</h3>
                             <ul>
                                 <li>
-                                    <p><strong>Museum of Vancouver: Haida Now</strong> Documentary</p>
+                                    <p>
+                                        <strong>Museum of Vancouver: Haida Now</strong> Documentary</p>
                                     <p class="date">Oct. 2017 - Ongoing</p>
                                     <p>Director, Cinematographer, Editor</p>
-                                    <p>Telling the story of reconciliation and the urban Haida experience through artists Corey Bulpitt, and MOV curator Kwiaahwah Jones.</p>
-                                    <p><a href="media_haida_now.html">Visit Portfolio Page</a></p>
+                                    <p>Telling the story of reconciliation and the urban Haida experience through artists Corey
+                                        Bulpitt, and MOV curator Kwiaahwah Jones.</p>
+                                    <p>
+                                        <a href="media_haida_now.html">Visit Portfolio Page</a>
+                                    </p>
                                 </li>
                                 <li>
-                                    <p><strong>REMAX: Team Leo</strong> Web Videos</p>
+                                    <p>
+                                        <strong>REMAX: Team Leo</strong> Web Videos</p>
                                     <p class="date">Jan. - Jun. 2018</p>
                                     <p>Director, Cinematographer, Editor</p>
                                     <p>Tzzzz</p>
-                                    <p><a href="media_haida_now.html">Visit Portfolio Page</a></p>
+                                    <p>
+                                        <a href="media_haida_now.html">Visit Portfolio Page</a>
+                                    </p>
                                 </li>
                                 <li>
-                                    <p><strong>_space Makerspace</strong> Promo Video</p>
+                                    <p>
+                                        <strong>_space Makerspace</strong> Promo Video</p>
                                     <p class="date">Jan. - Jun. 2018</p>
                                     <p>Director, Cinematographer, Editor</p>
                                     <p>Tzzzz</p>
-                                    <p><a href="media_haida_now.html">Visit Portfolio Page</a></p>
+                                    <p>
+                                        <a href="media_haida_now.html">Visit Portfolio Page</a>
+                                    </p>
                                 </li>
                                 <li>
-                                    <p><strong>Simon Fraser University: Business of Design</strong> Promo Video</p>
+                                    <p>
+                                        <strong>Simon Fraser University: Business of Design</strong> Promo Video</p>
                                     <p class="date">Jan. - Jun. 2018</p>
                                     <p>Director, Cinematographer, Editor</p>
                                     <p>Tzzzz</p>
-                                    <p><a href="media_haida_now.html">Visit Portfolio Page</a></p>
+                                    <p>
+                                        <a href="media_haida_now.html">Visit Portfolio Page</a>
+                                    </p>
                                 </li>
                                 <li>
-                                    <p><strong>NCIX Computers</strong> Product Promo</p>
+                                    <p>
+                                        <strong>NCIX Computers</strong> Product Promo</p>
                                     <p class="date">May - Aug. 2017</p>
                                     <p>Cinematographer, Editor</p>
                                     <p>Tzzzz</p>
                                 </li>
                                 <li>
-                                    <p><strong>Pacific Institute of Climate Solutions</strong> PSA Series</p>
+                                    <p>
+                                        <strong>Pacific Institute of Climate Solutions</strong> PSA Series</p>
                                     <p class="date">Feb. - Jun. 2017</p>
                                     <p>Cinematographer, Editor</p>
                                     <p>Tzzzz</p>
                                 </li>
                                 <li>
-                                    <p><strong>Grand Bear Media</strong> TV Series</p>
+                                    <p>
+                                        <strong>Grand Bear Media</strong> TV Series</p>
                                     <p class="date">Dec. 2014 - Oct. 2016</p>
                                     <p>Cinematographer, Editor</p>
                                     <p>Tzzzz</p>
                                 </li>
                                 <li>
-                                    <p><strong>Freedom Boat Club BC</strong> Promo Video</p>
+                                    <p>
+                                        <strong>Freedom Boat Club BC</strong> Promo Video</p>
                                     <p class="date">Sept. - Oct. 2016</p>
                                     <p>Director, Cinematographer, Editor</p>
                                     <p>Tzzzz</p>
                                 </li>
                                 <li>
-                                    <p><strong>SFU IAT 343: Animation</strong> Short Film</p>
+                                    <p>
+                                        <strong>SFU IAT 343: Animation</strong> Short Film</p>
                                     <p class="date">Summer Semester 2016</p>
                                     <p>Director, set designer, camera, &amp; post production.</p>
                                     <p>Produced animated ad for Fulmex Paint with an Olympic theme.</p>
-                                    <p><a href="design_fulmex_animation.html">Learn More</a>&nbsp; &nbsp;<a href="https://www.youtube.com/watch?v=Qtv_eQFD1qs" target="_blank">Watch Online</a></p>
+                                    <p>
+                                        <a href="design_fulmex_animation.html">Learn More</a>&nbsp; &nbsp;
+                                        <a href="https://www.youtube.com/watch?v=Qtv_eQFD1qs" target="_blank">Watch Online</a>
+                                    </p>
                                 </li>
                                 <li>
-                                    <p><strong>SFU IAT 202: New Media Images</strong> Short Film</p>
+                                    <p>
+                                        <strong>SFU IAT 202: New Media Images</strong> Short Film</p>
                                     <p class="date">Spring Semester 2015</p>
                                     <p>Director, writer, director of photography, sound design.</p>
                                     <p>Created a short narrative film with skeleton crew.</p>
-                                    <p><a href="https://www.youtube.com/watch?v=qLPkE0m7S-g" target="_blank">Watch Online</a></p>
+                                    <p>
+                                        <a href="https://www.youtube.com/watch?v=qLPkE0m7S-g" target="_blank">Watch Online</a>
+                                    </p>
                                 </li>
 
                             </ul>
@@ -611,8 +834,8 @@
                     </div>
 
                 </div>
-
             </div>
+        </div>
 
 
         </div>
@@ -628,79 +851,74 @@
 <!-- <script src="js/bootstrap.js "></script> -->
 <!-- <script src="js/home.js "></script> -->
 <script>
-    $(document).ready(function() {
-        $('#contact').load('contact.html', function() {
+    $(document).ready(function () {
+        $('#contact').load('contact.html', function () {
             console.log('contact loaded')
         });
         // $("#wrapper").toggleClass("toggled ");
 
-        $('.hamburger').click(function() {
+        $('.hamburger').click(function () {
             $(this).toggleClass('open');
             $(".hamburger").toggleClass("is-active");
             $("#wrapper ").toggleClass("toggled");
         });
 
-        $('.menuClose').click(function() {
+        $('.menuClose').click(function () {
             event.preventDefault();
             $(this).toggleClass('open');
             $("#wrapper ").toggleClass("toggled ");
         });
 
-        $('.menuOpen').click(function() {
+        $('.menuOpen').click(function () {
             event.preventDefault();
             $(this).toggleClass('open');
             $("#wrapper ").toggleClass("toggled ");
         });
 
-        // $(".nav-home ").click(function(e) {
-        //     e.preventDefault();
-        //     $(window).scrollTo('#home', 600);
-        //     console.log("navbar-home selected ");
-        //     $(".hamburger").toggleClass("is-active");
-        //     $("#wrapper ").toggleClass("toggled");
-        // })
+        $(".nav-home ").click(function (e) {
+            e.preventDefault();
+            $(window).scrollTo('#home', 600);
+            console.log("navbar-home selected ");
+            $(".hamburger").toggleClass("is-active");
+            $("#wrapper ").toggleClass("toggled");
+        })
 
-        // $(".nav-design ").click(function(e) {
-        //     e.preventDefault();
-        //     $(window).scrollTo('#design', 600);
-        //     console.log("navbar-design selected ");
-        //     $(".hamburger").toggleClass("is-active");
-        //     $("#wrapper ").toggleClass("toggled");
-        // })
+        $(".nav-portfolio ").click(function (e) {
+            e.preventDefault();
+            $(window).scrollTo('#portfolio', 600);
+            console.log("navbar-portfolio selected ");
+            $(".hamburger").toggleClass("is-active");
+            $("#wrapper ").toggleClass("toggled");
+        })
 
-        // $(".nav-media ").click(function(e) {
-        //     e.preventDefault();
-        //     $(window).scrollTo('#media', 600);
-        //     console.log("navbar-media selected ");
-        //     $(".hamburger").toggleClass("is-active");
-        //     $("#wrapper ").toggleClass("toggled");
-        // })
+        $(".nav-mission ").click(function (e) {
+            e.preventDefault();
+            $(window).scrollTo('#mission', 600);
+            console.log("navbar-mission selected ");
+            $(".hamburger").toggleClass("is-active");
+            $("#wrapper ").toggleClass("toggled");
+        })
 
-        // $(".nav-about ").click(function(e) {
-        //     e.preventDefault();
-        //     $(window).scrollTo('#about', 600);
-        //     $(".hamburger").toggleClass("is-active");
-        //     $("#wrapper ").toggleClass("toggled");
-        // })
+        $(".nav-CV ").click(function (e) {
+            e.preventDefault();
+            $(window).scrollTo('#cv', 600);
+            $(".hamburger").toggleClass("is-active");
+            $("#wrapper ").toggleClass("toggled");
+        })
 
-        // $(".nav-contact ").click(function(e) {
-        //     e.preventDefault();
-        //     $(window).scrollTo('#contact', 600);
-        //     $(".hamburger").toggleClass("is-active");
-        //     $("#wrapper ").toggleClass("toggled");
-        // })
+        $(".nav-about ").click(function (e) {
+            e.preventDefault();
+            $(window).scrollTo('#about', 600);
+            $(".hamburger").toggleClass("is-active");
+            $("#wrapper ").toggleClass("toggled");
+        })
 
-        $(window).on('load', function() {
-            var winWidth = $(window).width();
-            console.log("winWidth " + winWidth);
-            if (winWidth <= 768) {
-                document.getElementById("menuClose").setAttribute("style", "display:inline; ");
-            } else {
-                // document.getElementById("menuClose").setAttribute("style", "display:none; ");
-                $("#wrapper ").toggleClass("toggled");
-            }
-        });
-
+        $(".nav-contact ").click(function (e) {
+            e.preventDefault();
+            $(window).scrollTo('#contact', 600);
+            $(".hamburger").toggleClass("is-active");
+            $("#wrapper ").toggleClass("toggled");
+        })
 
 
 
