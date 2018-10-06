@@ -79,14 +79,27 @@ a {
     }
 }
 
-.jumbotron{
+.jumbotron {
     background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('image/mountains.jpg');
     background-position: center;
     background-color: #00427F;
     background-repeat: no-repeat;
     background-size: auto 120%;
-
+    background-attachment: fixed;
 }
+
+.jumbotronText {
+    padding-top: 35vh;
+    padding-left: 3vw;
+}
+
+@media(max-width:768px) {
+    .jumbotronText {
+        padding-top: 25vh;
+    }
+}
+
+
 /* Highlight Portfolio Style*/
 
 .hpContainer {
@@ -278,7 +291,7 @@ a {
     flex-basis: 33%;
 }
 
-.resume-section h3{
+.resume-section h3 {
     padding-top: 1.5em;
 }
 
@@ -320,7 +333,9 @@ a {
     }
 }
 
+
 /* SIDEBAR NAV */
+
 #wrapper {
     padding-left: 0;
     -webkit-transition: all 0.5s ease;
@@ -350,7 +365,7 @@ a {
 
 #wrapper.toggled #sidebar-wrapper {
     width: 80vw;
-    margin-right:0;
+    margin-right: 0;
 }
 
 #page-content-wrapper {
@@ -364,14 +379,15 @@ a {
     margin-right: -250px;
 }
 
-.nav li{
+.nav li {
     list-style: none;
     padding-top: 0.35em;
 }
 
-.nav a{
+.nav a {
     color: white;
 }
+
 
 /* Sidebar Styles */
 
@@ -397,7 +413,6 @@ a {
     #wrapper.toggled {
         padding-left: 0;
     }
-
     .sidebar-nav {
         max-width: 300px;
         width: 40vw;
