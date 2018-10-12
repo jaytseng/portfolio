@@ -98,12 +98,12 @@
             <h3>//portfolio: Things I've been up to lately.</h3>
 
             <div class="highlightPortfolio">
-                <div class="hpImg">
-                    <h3 style="padding:20%; color:white;">Image Loader WIP</h3>
+                <div class="hpImg" id="hpImg">
+                    <!-- <h3 style="padding:20%; color:white;">Image Loader WIP</h3> -->
                 </div>
 
                 <div class="hpContainer">
-                    <div class="hpItem">
+                    <div class="hpItem" id="hp-item1">
                         <a href="#">
                             <h2>Strategized &amp; built a makerspace to enhance interdisciplinary experiential learning
                                 &amp; student, community, industry engagement.</h2>
@@ -112,7 +112,7 @@
                                 University </h5>
                         </a>
                     </div>
-                    <div class="hpItem">
+                    <div class="hpItem" id="hp-item2">
                         <a href="#">
                             <h2>Shot a documentary sharing the story of the urban Haida experience through the eyes of
                                 artist and carver, Corey Bulpitt.</h2>
@@ -121,7 +121,7 @@
                             </h5>
                         </a>
                     </div>
-                    <div class="hpItem">
+                    <div class="hpItem" id="hp-item3">
                         <a href="#">
                             <h2>Created &amp; installed a entrance experience to welcome users into a makerspace. </h2>
                             <h5>
@@ -129,7 +129,7 @@
                                 Makerspace @ SFU </h5>
                         </a>
                     </div>
-                    <div class="hpItem">
+                    <div class="hpItem" id="hp-item4">
                         <a href="#">
                             <h2>Optimized the workflow process to improve work between business, design, and
                                 development teams and increase work efficiency.</h2>
@@ -138,7 +138,7 @@
                                 Delivery</h5>
                         </a>
                     </div>
-                    <div class="hpItem">
+                    <div class="hpItem" id="hp-item5">
                         <a href="#">
                             <h2>Designed and prototyped an IOT smart fan product to efficiently cool spaces using only
                                 natural air and the power of microcontrollers.</h2>
@@ -150,6 +150,26 @@
                 </div>
 
             </div>
+
+
+        </div>
+        <div class="sectionDivider" id="mission">
+            <h3>//about: Why I do it?</h3>
+            <div class="aboutHeadline">
+                <h1>To empower people to be more creative, live better, &amp; share their stories &amp; perspectives.</h1>
+            </div>
+            <!-- <div class="aboutBody">
+                <div class="aboutContent">
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                        tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
+                        nostrud exerci tation ullamcorper suscipit lobortis
+                        nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in
+                        vulputate velit esse molestie consequat, vel illum dolore eu </p>
+                </div>
+                <div class="aboutImg">
+                    <img src="img/media_bear_in_mind.jpg" alt="Music in the Streets Render">
+                </div>
+            </div> -->
 
 
         </div>
@@ -205,26 +225,8 @@
 
             </div>
         </div>
-        <div class="sectionDivider" id="mission">
-            <h3>//about: Why I do it?</h3>
-            <div class="aboutHeadline">
-                <h1>To empower people to be more creative, live better, &amp; share their stories &amp; perspectives.</h1>
-            </div>
-            <div class="aboutBody">
-                <div class="aboutContent">
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
-                        tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
-                        nostrud exerci tation ullamcorper suscipit lobortis
-                        nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in
-                        vulputate velit esse molestie consequat, vel illum dolore eu </p>
-                </div>
-                <div class="aboutImg">
-                    <img src="img/media_bear_in_mind.jpg" alt="Music in the Streets Render">
-                </div>
-            </div>
 
 
-        </div>
         <div class="sectionDivider" id="about">
             <h3>//about: Who I am &amp; what I've done.</h3>
             <div class="aboutHeadline">
@@ -262,15 +264,20 @@
                     <div class="resume">
                         <div class="resume-section">
                             <h3>CURRENT &amp; PAST EMPLOYMENT</h3>
+                            <p>To see related projects, select the employer or education institution.</p>
                             <ul>
-                                <li>
+                                <li class="cv-202">
                                     <p>
                                         <strong>Studio Lab Instructor</strong> Simon Fraser University</p>
                                     <p class="date">2016 (Spring, Fall), 2017 (Spring, Fall), 2018 (Spring, Fall)</p>
                                     <p>Prepared &amp; lead up to three labs of 24 students in IAT 202: New Media.</p>
                                     <p>Designed &amp; implemented a webpage to host final projects.</p>
                                     <p>
-                                        <a href="https://www.iat202.com" target="_blank">Visit IAT 202 Projects Archive</a>
+                                        <a href="#" target="_blank">Portfolio Page </a> &nbsp; &nbsp;<a href="https://www.iat202.com"
+                                            target="_blank">Visit IAT 202 Projects Archive</a>
+                                    </p>
+                                    <p>
+
                                     </p>
                                 </li>
                                 <li class="cv-freelance">
@@ -315,7 +322,7 @@
                                     <p>UX/UI designer &amp; business strategy development.</p>
                                     <p>Creating an on call product delivery service &amp; optimizing workflow.</p>
                                 </li>
-                                <li>
+                                <li class="cv-kuelii">
                                     <p>
                                         <strong>Founder, CEO, Product Designer</strong> Kuelii Smart Design (Startup)</p>
                                     <p class="date">Oct. 2015 - Apr. 2017</p>
@@ -340,7 +347,7 @@
                         <div class="resume-section">
                             <h3>EDUCATION &amp; CERTIFICATION</h3>
                             <ul>
-                                <li>
+                                <li class="cv-sfu">
                                     <p>
                                         <strong>Bachelor of Science</strong> Simon Fraser University</p>
                                     <p class="date">Fall 2012 - Fall 2018</p>
@@ -354,7 +361,7 @@
                             </ul>
                             <h3>AWARDS, NOMINATIONS, &amp; PLACEMENTS</h3>
                             <ul>
-                                <li>
+                                <li class="cv-sfu">
                                     <p>
                                         <strong>Society for Visual Anthropology Film Festival</strong> Nomination</p>
                                     <p class="date">Festival in Nov. 2018</p>
@@ -366,7 +373,7 @@
                                     <p class="date">March, 2017</p>
                                     <p>Built &amp; pitched RESUPPIE, a machine learning computer vision fridge.</p>
                                 </li>
-                                <li>
+                                <li class="cv-kuelii">
                                     <p>
                                         <strong>Startup Weekend: UW</strong> 2nd Place</p>
                                     <p class="date">January, 2016</p>
@@ -381,7 +388,7 @@
                                         <a href="design_surrey_parkit.html">View Portfolio Page</a>
                                     </p>
                                 </li>
-                                <li>
+                                <li class="cv-sfu">
                                     <p>
                                         <strong>Western Engineering Competition</strong> 1st Place @SFU</p>
                                     <p class="date">Spring 2014</p>
@@ -550,6 +557,16 @@
                                         <a href="#">View Portfolio Page</a>
                                     </p>
                                 </li>
+                                <li class="cv-freelance">
+                                    <p>
+                                        <strong>SFU, Business of Design</strong> Communication Strategy</p>
+                                    <p class="date">Aug. - Dec. 2017</p>
+                                    <p>Tzzzz</p>
+                                    <p>Tzzzz</p>
+                                    <p>
+                                        <a href="#">View Portfolio Page</a>
+                                    </p>
+                                </li>
                                 <li class="cv-buggie">
                                     <p>
                                         <strong>Buggie Delivery</strong> Internal Workflow</p>
@@ -557,7 +574,16 @@
                                     <p>Tzzzz</p>
                                     <p>Tzzzz</p>
                                 </li>
-
+                                <li class="cv-202">
+                                    <p>
+                                        <strong>IAT 202 Studio Lab</strong> Course Content Design</p>
+                                    <p class="date">Spring 2016 - Fall 2017</p>
+                                    <p>Tzzzz</p>
+                                    <p>Tzzzz</p>
+                                    <p>
+                                        <a href="#">View Portfolio Page</a>
+                                    </p>
+                                </li>
                                 <li class="cv-buggie">
                                     <p>
                                         <strong>Buggie Delivery</strong> Business Strategy, UX Design</p>
@@ -568,7 +594,7 @@
                                         <a href="design_surrey_parkit.html">View Portfolio Page</a>
                                     </p>
                                 </li>
-                                <li>
+                                <li class="cv-kuelii">
                                     <p>
                                         <strong>Kuelii Smart Design</strong> Business Strategy, UX Design</p>
                                     <p class="date">Oct. 2015 - Apr. 2017</p>
@@ -590,7 +616,7 @@
                                     </p>
                                 </li>
 
-                                <li>
+                                <li class="cv-sfu">
                                     <p>
                                         <strong>IAT 233: Spatial Design</strong> Spatial Design</p>
                                     <p class="date">Fall Semester 2014</p>
@@ -611,7 +637,7 @@
                                         <a href="#">Visit Portfolio Page</a>
                                     </p>
                                 </li>
-                                <li>
+                                <li class="cv-kuelii">
                                     <p>
                                         <strong>Kuelii Smart Fan</strong>
                                     </p>
@@ -622,7 +648,7 @@
                                         <a href="https://blog.kuelii.com/" target="_blank">Visit Project Blog</a>
                                     </p>
                                 </li>
-                                <li>
+                                <li class="cv-sfu">
                                     <p>
                                         <strong>IAT 320: Body Interface</strong>
                                     </p>
@@ -630,7 +656,7 @@
                                     <p>Tzzzz</p>
                                     <p>Tzzzz</p>
                                 </li>
-                                <li>
+                                <li class="cv-sfu">
                                     <p>
                                         <strong>IAT 336: Materials in Design</strong>
                                     </p>
@@ -638,7 +664,7 @@
                                     <p>Team lead in electrical &amp; technical design, assembly.</p>
                                     <p>Designed &amp; assembled lamp of glass, paper, &amp; metal.</p>
                                 </li>
-                                <li>
+                                <li class="cv-sfu">
                                     <p>
                                         <strong>SFU Team Guardian</strong>
                                     </p>
@@ -676,7 +702,7 @@
                                     <p>Analyzed &amp; consulted to understand company &amp; product.</p>
                                     <p>Aligned company brand and message with product &amp; vision.</p>
                                 </li>
-                                <li>
+                                <li class="cv-kuelii">
                                     <p>
                                         <strong>Kuelii Smart Design</strong> Marketing, Print, &amp; Branding</p>
                                     <p class="date">Oct. 2015 - Apr. 2017</p>
@@ -690,7 +716,7 @@
                                     <p>Designed presentation booth, print, digital, and web materials, for wedding
                                         convention, 2015 season.</p>
                                 </li>
-                                <li>
+                                <li class="cv-sfu">
                                     <p>
                                         <strong>SFU Team Guardian</strong> Team Re-Branding</p>
                                     <p class="date">Fall 2014</p>
@@ -718,7 +744,7 @@
                                         <a href="http://www.sfu.ca/businessofdesign.html">Visit SFU BoD Website</a>
                                     </p>
                                 </li>
-                                <li>
+                                <li class="cv-202">
                                     <p>
                                         <strong>IAT202.com</strong> Web UX &amp; Development</p>
                                     <p class="date">June 2015</p>
@@ -750,7 +776,7 @@
                                 </li>
                                 <li class="cv-buggie">
                                     <p>
-                                        <strong>myBuggie.ca</strong> Website &amp; App UX</p>
+                                        <strong>myBuggie.ca</strong> Website &amp; Mobile App UX</p>
                                     <p class="date">Tzzzz</p>
                                     <p>Tzzzz</p>
                                     <p>Tzzzz</p>
@@ -758,21 +784,28 @@
                                         <a href="https://mybuggie.ca/">Visit myBuggie.ca</a>
                                     </p>
                                 </li>
-                                <li>
+                                <li class="cv-kuelii">
+                                    <p>
+                                        <strong>Kuelii Smart Design</strong> Android &amp; iOS App</p>
+                                    <p class="date">Tzzzz</p>
+                                    <p>Tzzzz</p>
+                                    <p>Tzzzz</p>
+                                </li>
+                                <li class="cv-sfu">
                                     <p>
                                         <strong>IAT 352: Android Development</strong> App UX &amp; Development</p>
                                     <p class="date">Spring Semester 2016</p>
                                     <p>Designed a multifunction interface for izakaya restaurant.</p>
                                     <p>Quick ordering of food &amp; interaction with serving staff.</p>
                                 </li>
-                                <li>
+                                <li class="cv-sfu">
                                     <p>
                                         <strong>IAT 334: Interface Design</strong> App UX</p>
                                     <p class="date">Spring Semester 2016</p>
                                     <p>Designed a multifunction interface for izakaya restaurant.</p>
                                     <p>Quick ordering of food &amp; interaction with serving staff.</p>
                                 </li>
-                                <li>
+                                <li class="cv-sfu">
                                     <p>
                                         <strong>IAT 235: Information Architecture &amp; Web</strong> Website Redesign</p>
                                     <p class="date">Spring Semester 2015</p>
@@ -785,7 +818,7 @@
                         <div class="resume-section">
                             <h3>CINEMATOGRAPHY, MEDIA, &amp; LIVE PRODUCTIONS</h3>
                             <ul>
-                                <li>
+                                <li class="cv-sfu">
                                     <p>
                                         <strong>Museum of Vancouver: Haida Now</strong> Documentary</p>
                                     <p class="date">Oct. 2017 - Ongoing</p>
@@ -854,7 +887,7 @@
                                     <p>Director, Cinematographer, Editor</p>
                                     <p>Tzzzz</p>
                                 </li>
-                                <li>
+                                <li class="cv-sfu">
                                     <p>
                                         <strong>SFU IAT 343: Animation</strong> Short Film</p>
                                     <p class="date">Summer Semester 2016</p>
@@ -866,7 +899,7 @@
                                             Online</a>
                                     </p>
                                 </li>
-                                <li>
+                                <li class="cv-sfu">
                                     <p>
                                         <strong>SFU IAT 202: New Media Images</strong> Short Film</p>
                                     <p class="date">Spring Semester 2015</p>
@@ -971,25 +1004,146 @@
             $("#wrapper ").toggleClass("toggled");
         })
 
-        $(".cv-space").mouseover(function () {
-            $(".cv-space").css("background-color", "rgb(240,240,240)");
+        //Highlight Portfolio Image Loader
+        $("#hp-item1").mouseover(function (e) {
+            $(".hpImg").css({ "background": "url('img/_space_Presentation1.JPG')", "width": "30vw;", "background-position": "80% 0%", "height": "inherit", "background-size": "auto 100%" });
         });
-        $(".cv-space").mouseout(function () {
-            $(".cv-space").css("background-color", "white");
-        });
-
-        $(".cv-freelance").mouseover(function () {
-            $(".cv-freelance").css("background-color", "rgb(240,240,240)");
-        });
-        $(".cv-freelance").mouseout(function () {
-            $(".cv-freelance").css("background-color", "white");
+        $("#hp-item2").mouseover(function (e) {
+            $(".hpImg").css({ "background": "url('img/media_haidanow_thumbnail.JPG')", "width": "30vw;", "background-position": "60% 0%", "height": "inherit", "background-size": "auto 100%" });
         });
 
-        $(".cv-buggie").mouseover(function () {
-            $(".cv-buggie").css("background-color", "rgb(240,240,240)");
+        $("#hp-item3").mouseover(function (e) {
+            $(".hpImg").css({ "background": "url('img/comHub_completed.JPG')", "width": "30vw;", "background-position": "80% 0%", "height": "inherit", "background-size": "auto 100%" });
         });
-        $(".cv-buggie").mouseout(function () {
-            $(".cv-buggie").css("background-color", "white");
+
+        $("#hp-item4").mouseover(function (e) {
+            $(".hpImg").css({ "background": "url('css/image/mountains.jpg')", "width": "30vw;", "background-position": "50% 0%", "height": "inherit", "background-size": "auto 100%" });
+        });
+
+        $("#hp-item5").mouseover(function (e) {
+            $(".hpImg").css({ "background": "url('img/kuelii_headerimg.jpeg')", "width": "30vw;", "background-position": "50% 0%", "height": "inherit", "background-size": "auto 100%" });
+        });
+
+
+
+        //Resume Project Selector 
+        var cvSpaceSelected = false;
+        var cvFreelanceSelected = false;
+        var cvBuggieSelected = false;
+        var cvKueliiSelected = false;
+        var cv202Selected = false;
+        var cvSfuSelected = false;
+
+        //Hover Function
+        $(".cv-space").hover(function () {
+            if (cvSpaceSelected == false) {
+                $(".cv-space").css("background-color", "rgb(240,240,240)");
+            }
+        }, function () {
+            if (cvSpaceSelected == false) {
+                $(".cv-space").css("background-color", "white");
+            }
+        });
+        $(".cv-freelance").hover(function () {
+            if (cvFreelanceSelected == false) {
+                $(".cv-freelance").css("background-color", "rgb(240,240,240)");
+            }
+        }, function () {
+            if (cvFreelanceSelected == false) {
+                $(".cv-freelance").css("background-color", "white");
+            }
+        });
+        $(".cv-buggie").hover(function () {
+            if (cvBuggieSelected == false) {
+                $(".cv-buggie").css("background-color", "rgb(240,240,240)");
+            }
+        }, function () {
+            if (cvBuggieSelected == false) {
+                $(".cv-buggie").css("background-color", "white");
+            }
+        });
+        $(".cv-kuelii").hover(function () {
+            if (cvKueliiSelected == false) {
+                $(".cv-kuelii").css("background-color", "rgb(240,240,240)");
+            }
+        }, function () {
+            if (cvKueliiSelected == false) {
+                $(".cv-kuelii").css("background-color", "white");
+            }
+        });
+        $(".cv-202").hover(function () {
+            if (cv202Selected == false) {
+                $(".cv-202").css("background-color", "rgb(240,240,240)");
+            }
+        }, function () {
+            if (cv202Selected == false) {
+                $(".cv-202").css("background-color", "white");
+            }
+        });
+        $(".cv-sfu").hover(function () {
+            if (cvSfuSelected == false) {
+                $(".cv-sfu").css("background-color", "rgb(240,240,240)");
+            }
+        }, function () {
+            if (cvSfuSelected == false) {
+                $(".cv-sfu").css("background-color", "white");
+            }
+        });
+
+        //Click Function
+        $(".cv-space").click(function () {
+            if (cvSpaceSelected == false) {
+                $(".cv-space").css("background-color", "rgb(260,240,240)");
+                cvSpaceSelected = true;
+            } else {
+                $(".cv-space").css("background-color", "white");
+                cvSpaceSelected = false;
+            }
+        });
+        $(".cv-freelance").click(function () {
+            if (cvFreelanceSelected == false) {
+                $(".cv-freelance").css("background-color", "rgb(240,260,240)");
+                cvFreelanceSelected = true;
+            } else {
+                $(".cv-freelance").css("background-color", "white");
+                cvFreelanceSelected = false;
+            }
+        });
+        $(".cv-buggie").click(function () {
+            if (cvBuggieSelected == false) {
+                $(".cv-buggie").css("background-color", "rgb(240,240,260)");
+                cvBuggieSelected = true;
+            } else {
+                $(".cv-buggie").css("background-color", "white");
+                cvBuggieSelected = false;
+            }
+        });
+        $(".cv-kuelii").click(function () {
+            if (cvKueliiSelected == false) {
+                $(".cv-kuelii").css("background-color", "rgb(260,240,260)");
+                cvKueliiSelected = true;
+            } else {
+                $(".cv-kuelii").css("background-color", "white");
+                cvKueliiSelected = false;
+            }
+        });
+        $(".cv-202").click(function () {
+            if (cv202Selected == false) {
+                $(".cv-202").css("background-color", "rgb(260,260,240)");
+                cv202Selected = true;
+            } else {
+                $(".cv-202").css("background-color", "white");
+                cvFreelanceSelected = false;
+            }
+        });
+        $(".cv-sfu").click(function () {
+            if (cvSfuSelected == false) {
+                $(".cv-sfu").css("background-color", "rgb(240,260,260)");
+                cvSfuSelected = true;
+            } else {
+                $(".cv-sfu").css("background-color", "white");
+                cvSfuSelected = false;
+            }
         });
 
         $(window).on('load', function () {
