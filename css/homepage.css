@@ -84,7 +84,7 @@ a {
     background-position: center;
     background-color: #00427F;
     background-repeat: no-repeat;
-    background-size: auto 150%;
+    background-size: cover;
     background-attachment: fixed;
 }
 
@@ -96,6 +96,9 @@ a {
 @media(max-width:768px) {
     .jumbotronText {
         padding-top: 25vh;
+    }
+    .jumbotron {
+        background-attachment: local;
     }
 }
 
@@ -116,9 +119,9 @@ a {
     width: 30vw;
     height: inherit;
     background: url('image/_space_Presentation1.JPG');
-    background-position: 80% 0%;
+    background-position: 70% 0%;
     background-repeat: no-repeat;
-    background-size: auto 100%;
+    background-size: cover;
 }
 
 .hpContainer {
